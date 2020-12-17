@@ -117,13 +117,10 @@
   letter-spacing: normal;
   text-align: center;
   color: #b8b8b9;
-  background-color: crimson;
 }
 
-.footer-navigation-menu {
-  background-color: rgb(32, 4, 97);
+.footer-navigation-menu {}
 
-}
 
 
 .footer-list{
