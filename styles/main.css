@@ -1,0 +1,80 @@
+* {
+  /* border: 1px solid black;*/
+  box-sizing: border-box;
+}
+/*HEADER*/
+.page {
+  margin: 0;
+}
+.container {
+  display: flex;
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  display: flex;
+  /*border: rgb(164, 120, 206) 2px solid;*/
+  flex-direction: column;
+}
+.headboard {
+  width: 320px;
+  height: 60px;
+  padding: 15px 80px;
+  opacity: 0.95;
+  background-color: #099d8d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.name {
+  width: 160px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.navigation-menu {
+  display: flex;
+}
+.list {
+  display: flex;
+  list-style-type: none;
+  width: 320px;
+  height: 45px;
+  margin: 0px 0 0;
+  padding: 8px 17px 7px 16px;
+  opacity: 0.9;
+  background-color: #14d9c4;
+}
+.menu {
+  height: 30px;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: white;
+}
+.menu-1 {
+  width: 56px;
+  margin: 0 15px 0 0;
+}
+.menu-2 {
+  width: 121px;
+  margin: 0 15px;
+}
+.menu-3 {
+  width: 80px;
+  margin: 0 0 0 15px;
+}

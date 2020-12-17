@@ -19,7 +19,7 @@
   /*border: rgb(164, 120, 206) 2px solid;*/
   flex-direction: column;
 }
-.cabecera {
+.headboard {
   width: 320px;
   height: 60px;
   padding: 15px 80px;
@@ -29,7 +29,7 @@
   justify-content: center;
   align-items: center;
 }
-.nombre-equipo {
+.name {
   width: 160px;
   height: 30px;
   font-size: 16px;
@@ -43,7 +43,7 @@
   justify-content: center;
   align-items: center;
 }
-.menu-navegacion {
+.navigation-menu {
   display: flex;
 }
 .list {
