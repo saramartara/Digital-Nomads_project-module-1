@@ -1,0 +1,215 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*HEADER*/
+.page {
+  margin: 0;
+}
+.container {
+  display: flex;
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  display: flex;
+  /*border: rgb(164, 120, 206) 2px solid;*/
+  flex-direction: column;
+}
+.headboard {
+  width: 320px;
+  height: 60px;
+  padding: 15px 80px;
+  opacity: 0.95;
+  background-color: #099d8d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.name {
+  width: 160px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.navigation-menu {
+  display: flex;
+}
+.list {
+  display: flex;
+  list-style-type: none;
+  width: 320px;
+  height: 45px;
+  margin: 0px 0 0;
+  padding: 8px 17px 7px 16px;
+  opacity: 0.9;
+  background-color: #14d9c4;
+}
+.menu {
+  height: 30px;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: white;
+}
+.menu-1 {
+  width: 56px;
+  margin: 0 15px 0 0;
+}
+.menu-2 {
+  width: 121px;
+  margin: 0 15px;
+}
+.menu-3 {
+  width: 80px;
+  margin: 0 0 0 15px;
+}
+
+.adalabers {
+  width: 320px;
+  text-align: center;
+}
+.links-contacto {
+  display: flex;
+  justify-content: space-between;
+}
