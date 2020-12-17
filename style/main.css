@@ -1,0 +1,149 @@
+* {
+  /* border: 1px solid black;*/
+  box-sizing: border-box;
+}
+/*HEADER*/
+.page {
+  margin: 0;
+}
+.container {
+  display: flex;
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  display: flex;
+  /*border: rgb(164, 120, 206) 2px solid;*/
+  flex-direction: column;
+}
+.headboard {
+  width: 320px;
+  height: 60px;
+  padding: 15px 80px;
+  opacity: 0.95;
+  background-color: #099d8d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.name {
+  width: 160px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.navigation-menu {
+  display: flex;
+}
+.list {
+  display: flex;
+  list-style-type: none;
+  width: 320px;
+  height: 45px;
+  margin: 0px 0 0;
+  padding: 8px 17px 7px 16px;
+  opacity: 0.9;
+  background-color: #14d9c4;
+}
+.menu {
+  height: 30px;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: white;
+}
+.menu-1 {
+  width: 56px;
+  margin: 0 15px 0 0;
+}
+.menu-2 {
+  width: 121px;
+  margin: 0 15px;
+}
+.menu-3 {
+  width: 80px;
+  margin: 0 0 0 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer1 {
+  width: 320px;
+  height: 250px;
+  margin: 2225px 0 0;
+  padding: 30px 74px 45px;
+  border: solid 1px #b8b8b9
+  background-color: var(white) ;
+}
+
+.footer-container{
+  width: 172px;
+  height: 20px;
+  margin: 0 0 20px;
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: center;
+  color: #b8b8b9;
+  background-color: crimson;
+}
+
+.footer-navigation-menu {
+  background-color: rgb(32, 4, 97);
+
+}
+
+
+.footer-list{
+  width: 114px;
+  height: 60px;
+  margin: 20px 29px 30px;
+  opacity: 0.75;
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: center;
+  color: #54585a;
+}
+
+footer-logo{
+  width: 115.9px;
+  height: 45px;
+  margin: 30px 28.1px 0 28px;
+}
