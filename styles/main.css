@@ -162,6 +162,15 @@ table {
   font-style: normal;
 }
 
+/*NUESTRO CÓDIGO EN CSS*/
+
+/*Hay que meter en variable los siguientes elementos; tamaño títulos, colores, font-family, letter-spacing, font-stretch, font-style, text-align. Revisar si me he dejado alguna*/
+
+:root {
+  --title-nav-color: white;
+  --background-colordark: #099d8d;
+  --background-colorlight: #14d9c4;
+}
 /*HEADER*/
 .page {
   margin: 0;
@@ -184,7 +193,7 @@ table {
   height: 60px;
   padding: 15px 80px;
   opacity: 0.95;
-  background-color: #099d8d;
+  background-color: var(--background-colordark);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -198,9 +207,10 @@ table {
   line-height: 2.25;
   letter-spacing: normal;
   text-align: center;
+  color: var(--title-nav-color);
 }
 .navigation-menu {
-  display: flex;
+  display: inline;
 }
 .list {
   display: flex;
@@ -210,7 +220,7 @@ table {
   margin: 0px 0 0;
   padding: 8px 17px 7px 16px;
   opacity: 0.9;
-  background-color: #14d9c4;
+  background-color: var(--background-colorlight);
 }
 .menu {
   height: 30px;
@@ -220,7 +230,7 @@ table {
   font-style: normal;
   line-height: 2;
   letter-spacing: normal;
-  color: white;
+  color: var(--title-nav-color);
 }
 .menu-1 {
   width: 56px;
@@ -244,7 +254,7 @@ table {
   line-height: 1.88;
   letter-spacing: normal;
   text-align: center;
-  color: #099d8d;
+  color: var(--background-colordark);
 }
 
 .adalabers {
@@ -288,7 +298,7 @@ table {
   margin: 2225px 0 0;
   padding: 30px 74px 45px;
   border: solid 1px #b8b8b9;
-  background-color: var(white);
+  background-color: white;
 }
 
 .footer-container {
