@@ -37,9 +37,10 @@
 
 /*NUESTRO CÓDIGO EN CSS*/
 
-/*Hay que meter en variable los siguientes elementos; tamaño títulos, colores, font-family, letter-spacing, font-stretch, font-style, text-align. Revisar si me he dejado alguna*/
+/*Hay que meter en variable los siguientes elementos; tamaño títulos, colores, font-family, letter-spacing, font-stretch, font-style, text-align. Revisad si me he dejado alguna*/
 
 :root {
+  /*Colores que aparecen en el header*/
   --title-nav-color: white;
   --background-colordark: #099d8d;
   --background-colorlight: #14d9c4;
@@ -57,12 +58,13 @@
   font-style: normal;
   line-height: 1.88;
   letter-spacing: normal;
-  display: flex;
   /*border: rgb(164, 120, 206) 2px solid;*/
   flex-direction: column;
+  flex-wrap: wrap;
 }
 .headboard {
-  width: 320px;
+  box-sizing: border-box;
+  width: 100%;
   height: 60px;
   padding: 15px 80px;
   opacity: 0.95;
@@ -70,6 +72,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /*border: black solid 4px;*/
 }
 .name {
   font-family: OpenSans;
@@ -86,14 +89,17 @@
   display: inline;
 }
 .list {
+  box-sizing: border-box;
   display: flex;
+  justify-content: center;
+  width: 100%;
   list-style-type: none;
-  width: 320px;
   height: 45px;
   margin: 0px 0 0;
   padding: 8px 17px 7px 16px;
   opacity: 0.9;
   background-color: var(--background-colorlight);
+  /*border: black solid 4px;*/
 }
 .menu {
   height: 30px;
@@ -117,7 +123,51 @@
   width: 80px;
   margin: 0 0 0 15px;
 }
-
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.hero-image {
+  box-sizing: border-box;
+  background-image: url("fondo5blanco.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 100%;
+  height: 316px;
+  padding: 0 0 316px;
+  /*border: black solid 4px;*/
+}
+.slogan {
+  /*border: black 2px solid;*/
+  height: 80px;
+  width: fit-content;
+  text-align: center;
+  background-color: var(--title-nav-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: OpenSans;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.39;
+  letter-spacing: normal;
+  position: absolute;
+  /*chapucilla para centrar el eslogan*/
+  padding: 2px 50px 2px;
+  left: 44.2%;
+  top: 380px;
+}
+/*chapucilla para que se vea EQUIPO debajo del eslogan*/
+.back {
+  background-color: white;
+  height: 40px;
+  /*border: black solid 4px*/
+}
 .quienes-somos {
   font-family: Rubik;
   font-size: 24px;
