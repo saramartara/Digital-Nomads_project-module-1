@@ -231,11 +231,15 @@
 
 .links-contacto {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0 0 45px 0;
-  border: 1px solid blue;
+  width: 124px;
 }
 
+.fa {
+  color: var(--background-colordark);
+  font-size: 16px;
+}
 /* FOOTER STYLE */
 
 .footer-1 {
