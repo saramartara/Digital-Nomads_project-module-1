@@ -121,16 +121,11 @@
 }
 .hero-image {
   box-sizing: border-box;
-  /*background-image: url("fondo5blanco.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;*/
   width: 100%;
-  border: black solid 4px;
+  /*border: black solid 4px;*/
 }
 .slogan {
-  border: black 2px solid;
-  /*width: 290px;*/
+  /*border: black 2px solid;*/
   text-align: center;
   background-color: var(--title-nav-color);
   font-family: OpenSans;
