@@ -128,6 +128,60 @@ table {
   border-spacing: 0;
 }
 
+/* open-sans-regular - latin */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/open-sans-v18-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/open-sans-v18-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/open-sans-v18-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/open-sans-v18-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/open-sans-v18-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/open-sans-v18-latin-regular.svg#OpenSans") format("svg"); /* Legacy iOS */
+}
+
+/* open-sans-600 - latin */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/open-sans-v18-latin-600.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/open-sans-v18-latin-600.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/open-sans-v18-latin-600.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/open-sans-v18-latin-600.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/open-sans-v18-latin-600.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/open-sans-v18-latin-600.svg#OpenSans") format("svg"); /* Legacy iOS */
+}
+
+/* rubik-500 - latin */
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/rubik-v11-latin-500.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/rubik-v11-latin-500.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/rubik-v11-latin-500.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/rubik-v11-latin-500.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/rubik-v11-latin-500.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/rubik-v11-latin-500.svg#Rubik")
+      format("svg"); /* Legacy iOS */
+}
+
 /*HEADER*/
 .page {
   margin: 0;
@@ -156,18 +210,14 @@ table {
   align-items: center;
 }
 .name {
-  width: 160px;
-  height: 30px;
-  font-size: 16px;
-  font-weight: 500;
+  font-family: OpenSans;
+  font-size: 20px;
+  font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.88;
+  line-height: 2.25;
   letter-spacing: normal;
-  color: white;
   text-align: center;
-  justify-content: center;
-  align-items: center;
 }
 .navigation-menu {
   display: flex;
@@ -298,9 +348,39 @@ table {
   /*color: #54585a;*/
 }
 
+.quienes-somos {
+  font-family: Rubik;
+  font-size: 24px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: center;
+  color: #099d8d;
+}
+
 .adalabers {
   width: 320px;
   text-align: center;
+}
+
+img {
+  width: 180px;
+  height: 180px;
+}
+
+.paragraph {
+  width: 290px;
+  font-family: OpenSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #54585a;
 }
 .links-contacto {
   display: flex;
