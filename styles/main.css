@@ -40,10 +40,13 @@
 /*Hay que meter en variable los siguientes elementos; tamaño títulos, colores, font-family, letter-spacing, font-stretch, font-style, text-align. Revisad si me he dejado alguna*/
 
 :root {
-  /*Colores que aparecen en el header*/
+  /*Colores*/
   --title-nav-color: white;
   --background-colordark: #099d8d;
   --background-colorlight: #14d9c4;
+  /*Fuentes*/
+  --title: rubik;
+  --text: OpenSans;
 }
 /*HEADER*/
 .page {
@@ -51,7 +54,7 @@
 }
 .container {
   display: flex;
-  font-family: Rubik;
+  font-family: var(--title);
   font-size: 16px;
   font-weight: 500;
   font-stretch: normal;
@@ -197,7 +200,7 @@
 .strengthstitle {
   height: 45px;
   width: auto;
-  font-family: Rubik;
+  font-family: var(--title);
   font-size: 22px;
   font-weight: 500;
   font-stretch: normal;
@@ -211,7 +214,7 @@
 .weaknessestitle {
   height: 45px;
   width: auto;
-  font-family: Rubik;
+  font-family: var(--title);
   font-size: 22px;
   font-weight: 500;
   font-stretch: normal;
@@ -255,7 +258,7 @@
 }
 
 .quienes-somos {
-  font-family: Rubik;
+  font-family: var(--title);
   font-size: 24px;
   font-weight: 500;
   margin: 30px 0;
