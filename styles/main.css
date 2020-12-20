@@ -144,11 +144,13 @@
   font-style: normal;
   line-height: 1.39;
   letter-spacing: normal;
+  padding: 7px 15px 8px;
+  /* OTRA FORMA QUE "FUNCIONA" 
   position: absolute;
   z-index: 1;
-  padding: 7px 15px 8px;
-  margin: auto;
-  top: 314px;
+  top: 314px;*/
+  align-items: flex-end;
+  transform: translateY(-60%);
 }
 /* EQUIPO */
 
