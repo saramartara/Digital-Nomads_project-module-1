@@ -1,131 +1,10 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+@import url("reset.css");
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+@font-face {
+  font-family: "FontAwesome5BrandsRegular";
+  src: url("../fonts/fa-brands-400.woff") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* open-sans-regular - latin */
@@ -133,18 +12,7 @@ table {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/open-sans-v18-latin-regular.eot"); /* IE9 Compat Modes */
-  src: local(""),
-    url("../fonts/open-sans-v18-latin-regular.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */ url("../fonts/open-sans-v18-latin-regular.woff2")
-      format("woff2"),
-    /* Super Modern Browsers */ url("../fonts/open-sans-v18-latin-regular.woff")
-      format("woff"),
-    /* Modern Browsers */ url("../fonts/open-sans-v18-latin-regular.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */
-      url("../fonts/open-sans-v18-latin-regular.svg#OpenSans") format("svg"); /* Legacy iOS */
+  src: url("../fonts/open-sans-v18-latin-regular.woff2") format("woff2");
 }
 
 /* open-sans-600 - latin */
@@ -153,16 +21,7 @@ table {
   font-style: normal;
   font-weight: 600;
   src: url("../fonts/open-sans-v18-latin-600.eot"); /* IE9 Compat Modes */
-  src: local(""),
-    url("../fonts/open-sans-v18-latin-600.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */ url("../fonts/open-sans-v18-latin-600.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("../fonts/open-sans-v18-latin-600.woff")
-      format("woff"),
-    /* Modern Browsers */ url("../fonts/open-sans-v18-latin-600.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */
-      url("../fonts/open-sans-v18-latin-600.svg#OpenSans") format("svg"); /* Legacy iOS */
+  src: url("../fonts/open-sans-v18-latin-600.woff2") format("woff2");
 }
 
 /* rubik-500 - latin */
@@ -171,17 +30,21 @@ table {
   font-style: normal;
   font-weight: 500;
   src: url("../fonts/rubik-v11-latin-500.eot"); /* IE9 Compat Modes */
-  src: local(""),
-    url("../fonts/rubik-v11-latin-500.eot?#iefix") format("embedded-opentype"),
-    /* IE6-IE8 */ url("../fonts/rubik-v11-latin-500.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("../fonts/rubik-v11-latin-500.woff")
-      format("woff"),
-    /* Modern Browsers */ url("../fonts/rubik-v11-latin-500.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */ url("../fonts/rubik-v11-latin-500.svg#Rubik")
-      format("svg"); /* Legacy iOS */
+  src: url("../fonts/rubik-v11-latin-500.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 
+/*NUESTRO CÓDIGO EN CSS*/
+
+/*Hay que meter en variable los siguientes elementos; tamaño títulos, colores, font-family, letter-spacing, font-stretch, font-style, text-align. Revisad si me he dejado alguna*/
+
+:root {
+  /*Colores que aparecen en el header*/
+  --title-nav-color: white;
+  --background-colordark: #099d8d;
+  --background-colorlight: #14d9c4;
+}
 /*HEADER*/
 .page {
   margin: 0;
@@ -195,19 +58,21 @@ table {
   font-style: normal;
   line-height: 1.88;
   letter-spacing: normal;
-  display: flex;
   /*border: rgb(164, 120, 206) 2px solid;*/
   flex-direction: column;
+  flex-wrap: wrap;
 }
 .headboard {
-  width: 320px;
+  box-sizing: border-box;
+  width: 100%;
   height: 60px;
   padding: 15px 80px;
   opacity: 0.95;
-  background-color: #099d8d;
+  background-color: var(--background-colordark);
   display: flex;
   justify-content: center;
   align-items: center;
+  /*border: black solid 4px;*/
 }
 .name {
   font-family: OpenSans;
@@ -218,19 +83,23 @@ table {
   line-height: 2.25;
   letter-spacing: normal;
   text-align: center;
+  color: var(--title-nav-color);
 }
 .navigation-menu {
-  display: flex;
+  display: inline;
 }
 .list {
+  box-sizing: border-box;
   display: flex;
+  justify-content: center;
+  width: 100%;
   list-style-type: none;
-  width: 320px;
   height: 45px;
   margin: 0px 0 0;
   padding: 8px 17px 7px 16px;
   opacity: 0.9;
-  background-color: #14d9c4;
+  background-color: var(--background-colorlight);
+  /*border: black solid 4px;*/
 }
 .menu {
   height: 30px;
@@ -240,7 +109,7 @@ table {
   font-style: normal;
   line-height: 2;
   letter-spacing: normal;
-  color: white;
+  color: var(--title-nav-color);
 }
 .menu-1 {
   width: 56px;
@@ -254,17 +123,20 @@ table {
   width: 80px;
   margin: 0 0 0 15px;
 }
+<<<<<<< HEAD
 /* EQUIPO */
 
 .aboutus {
-  display: flex;
+  display: flexbox;
   flex-direction: column;
-  width: 320px;
+  flex-wrap: wrap;
   height: 504px;
   padding: 30px 15px 45px;
+  justify-content: center;
+  align-items: center;
 }
 .equipo {
-  width: 89px;
+  box-sizing: border-box;
   height: 45px;
   margin: 0 99.5px 15px 101.5px;
   font-family: Rubik;
@@ -275,80 +147,136 @@ table {
   line-height: 1.88;
   letter-spacing: normal;
   text-align: center;
-  color: #14d9c4;
+  color: var(--background-colorlight);
 }
 .text1 {
-  width: 290px;
   height: 384px;
-  padding-top: 90px;
-  padding-bottom: 30px;
-  padding-right: 15px;
-  padding-left: 15px;
+  width: auto;
+  margin: 15px 0 0;
+  font-family: OpenSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #54585a;
 }
 .container-strengths {
-  width: 320px;
+  display: flexbox;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
   height: 579px;
-  /*margin: 504px 0 0;*/
+  box-sizing: border-box;
   padding: 30px 15px 45px;
+  justify-content: center;
+  align-items: center;
   opacity: 0.2;
-  /*background-color: #b8b8b9;*/
-}
-.strengths {
-  width: 290px;
-  height: 45px;
-  font-family: Rubik;
-  font-size: 22px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.05;
-  letter-spacing: normal;
-  text-align: center;
-  color: #099d8d;
-}
-.weaknesses {
-  width: 290px;
-  height: 45px;
-  font-family: Rubik;
-  font-size: 22px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.05;
-  letter-spacing: normal;
-  text-align: center;
-  color: #099d8d;
-}
-.strengthstext {
-  width: 290px;
-  height: 192px;
-  margin: 45px 0 30px;
-  /*font-family: OpenSans;*/
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  text-align: center;
-  /*color: #54585a;*/
-}
-.weaknessestext {
-  width: 290px;
-  height: 192px;
-  margin: 45px 0 30px;
-  /*font-family: OpenSans;*/
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  text-align: center;
-  /*color: #54585a;*/
+  background-color: #b8b8b9;
 }
 
-.quienes-somos {
+.strengths {
+  height: 45px;
+  width: auto;
+  font-family: Rubik;
+  font-size: 22px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.05;
+  letter-spacing: normal;
+  text-align: center;
+  justify-content: center;
+  color: var(--background-colordark);
+}
+.weaknesses {
+  height: 45px;
+  width: auto;
+  font-family: Rubik;
+  font-size: 22px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.05;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--background-colordark);
+}
+.strengthstext {
+  height: 192px;
+  margin: 45px 0 30px;
+  font-family: OpenSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #54585a;
+}
+.weaknessestext {
+  height: 192px;
+  margin: 45px 0 30px;
+  font-family: OpenSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #54585a;
+}
+
+======= .hero {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.hero-image {
+  box-sizing: border-box;
+  background-image: url("fondo5blanco.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 100%;
+  height: 316px;
+  padding: 0 0 316px;
+  /*border: black solid 4px;*/
+}
+.slogan {
+  /*border: black 2px solid;*/
+  height: 80px;
+  width: fit-content;
+  text-align: center;
+  background-color: var(--title-nav-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: OpenSans;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.39;
+  letter-spacing: normal;
+  position: absolute;
+  /*chapucilla para centrar el eslogan*/
+  padding: 2px 50px 2px;
+  left: 44.2%;
+  top: 380px;
+}
+/*chapucilla para que se vea EQUIPO debajo del eslogan*/
+.back {
+  background-color: white;
+  height: 40px;
+  /*border: black solid 4px*/
+}
+>>>>>>>79d30cf96963065c16b035b4fb9d9a488f15a6d9 .quienes-somos {
   font-family: Rubik;
   font-size: 24px;
   font-weight: 500;
@@ -357,7 +285,7 @@ table {
   line-height: 1.88;
   letter-spacing: normal;
   text-align: center;
-  color: #099d8d;
+  color: var(--background-colordark);
 }
 
 .adalabers {
@@ -365,9 +293,12 @@ table {
   text-align: center;
 }
 
-img {
+.photo {
   width: 180px;
   height: 180px;
+  margin: 0 55px 15px;
+  border-radius: 4px;
+  border: solid 5px rgba(0, 0, 0, 0.08);
 }
 
 .paragraph {
@@ -382,7 +313,90 @@ img {
   text-align: center;
   color: #54585a;
 }
+
+.g {
+  font-family: "FontAwesome5BrandsRegular";
+}
+
 .links-contacto {
   display: flex;
   justify-content: space-between;
+}
+
+.footer-1 {
+  width: 15%;
+  height: 20%;
+  padding: 2%;
+  border: solid 1px #b8b8b9;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*background-color: gold;*/
+}
+
+.footer-container {
+  width: auto;
+  height: 20px;
+  margin: auto;
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: #b8b8b9;
+  display: inline-block;
+  /*background-color: darkblue;*/
+  align-items: center;
+  padding-bottom: 5%;
+}
+
+.footer-navigation-menu {
+  margin: auto;
+  display: flex;
+  padding-bottom: 3%;
+}
+
+.footer-list {
+  width: 100%;
+  margin: auto;
+  opacity: 0.75;
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: center;
+  color: #54585a;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  /*background-color: deeppink;*/
+}
+
+.footer-element {
+  text-decoration: none;
+  color: #54585a;
+}
+
+.footer-element-1 {
+}
+
+.footer-element-2 {
+}
+
+.footer-element-3 {
+}
+
+.footer-logo {
+  width: 44%;
+  height: 30%;
+  margin: auto;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
 }

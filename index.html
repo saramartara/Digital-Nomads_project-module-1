@@ -2,7 +2,9 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="./styles/main.css" />
+    </style>
   </head>
   <body class="page">
     <header class="container">
@@ -17,48 +19,60 @@
         </ul>
       </nav>
     </header>
-    <section class="hero">
-      <img />
-      <p>Del GIT al cielo</p>
-    </section>
-    <section class="aboutus">
-      <h2 class= "aboutus equipo">EQUIPO</h2>
-        <p class="aboutus text1">
-          Somos cuatro programadoras, diversas e independientes que disfrutan
-          aprendiendo y aprovechando todas las oportunidades que el mundo nos
-          ofrece. Si buscas un punto de vista innovador, fresco y divertido a tu
-          proyecto, somos tu equipo.
-        </p>
+    <main class="main">
+      <section class="hero">
+        <div class="hero-image"></div>
+        <div class="slogan"><p>Del GIT al cielo</p></div>
+        <div class="back"></div>
+      </section>
+      <section class="aboutus">
+        <h2 class= "aboutus equipo">EQUIPO</h2>
+          <p class="aboutus text1">
+            Somos cuatro programadoras, diversas e independientes que disfrutan
+            aprendiendo y aprovechando todas las oportunidades que el mundo nos
+            ofrece. Si buscas un punto de vista innovador, fresco y divertido a tu
+            proyecto, somos tu equipo.
+          </p>
     </section>
     <section class="container-strengths">
-      <h2 class="strengths">Fortalezas</h2>
+      <article>
+        <h2 class="strengths">Fortalezas</h2>
         <p class="strengthstext">
           Somos valientes en búsqueda de nuevos retos, con ganas de mejorar y con
           una gran capacidad de transformación. Trabajamos en contacto continuo
           contigo para ir avanazando juntas y de la mano, para obtener siempre el
           mejor resultado. El superpoder del equipo es nuestra diversidad.
         </p>
-      <h2 class="weaknesses">Debilidades</h2>
+      </article>
+      <article>
+         <h2 class="weaknesses">Debilidades</h2>
         <p class="weaknessestext">
           Somos un equipo en crecimiento, aprendiendo día a día nuevas
           herramientas. Estamos en la distancia pero trabajamos para asegurar la
           cercanía.
         </p>
+      </article>
     </section>
     <section class="adalabers">
       <h2 class="quienes-somos">QUIÉNES SOMOS</h2>
       <div class="adalabers adal-Cristina">
-        <img src="./images/imagen prueba.jfif" alt="Cristina González" />
+        <img
+          class="photo"
+          src="./images/imagen prueba.jfif"
+          alt="Cristina González"
+        />
         <h3 class="name">Cristina González</h3>
         <p class="paragraph parf-adalaber">
           Cristina es la veloz del grupo, precisa, construye unos buenos
           cimientos a cada proyecto. ¿Tendrá algo que ver su experiencia como
           ingeniera?
         </p>
+        <div class="g">&amp;#62132;<p>&#62132</p></div>
         <nav>
           <ul class="links-contacto">
             <li class="github">
-              <a href="https://github.com/crisgruiz">IconoGit</a>
+              <a href="https://github.com/crisgruiz"></a>
+              </a>
             </li>
             <li></li>
             <li></li>
@@ -66,9 +80,8 @@
           </ul>
         </nav>
       </div>
-
       <div class="adalabers adal-Maríaa">
-        <img src="./images/maria web.jpg" alt="Sara Martínez" />
+        <img class="photo" src="./images/maria web.jpg" alt="Sara Martínez" />
         <h3 class="name">María Virumbrales</h3>
         <p class="paragraph parf-adalaber">
           María es nuestro foco, ilumina las ideas y las presenta sobre el
@@ -87,7 +100,11 @@
         </nav>
       </div>
       <div class="adalabers adal-Amanda">
-        <img src="./images/amanda_garcia_web.jpg" alt="Sara Martínez" />
+        <img
+          class="photo"
+          src="./images/amanda_garcia_web.jpg"
+          alt="Sara Martínez"
+        />
         <h3 class="name">Amanda García</h3>
         <p class="paragraph parf-adalaber">
           Amanda es pura energía y creatividad. Aporta un punto de vista
@@ -109,7 +126,7 @@
         </nav>
       </div>
       <div class="adalabers adal-Sara">
-        <img src="./images/foto-sara.jpg" alt="Sara Martínez" />
+        <img class="photo" src="./images/foto-sara.jpg" alt="Sara Martínez" />
         <h3 class="name">Sara Martínez</h3>
         <p class="paragraph par-adalaber">
           Sara es nuestra coach, lo esencial no es invisible a sus ojos. Es
@@ -125,25 +142,24 @@
         </nav>
       </div>
     </section>
-
+  </main>
     <footer class="footer-1">
       <div class="footer-container">
-        <h5>Nómadas Digitales © 2020</h5>
-      </div>
+        <h5>Nómadas Digitales © 2020</h5></div>
       <nav class="footer-navigation-menu">
         <ul class="footer-list">
-          <li class="footer-element footer-element-1">
-            <a href="">EQUIPO</a>
+          <li class="footer-element-1">
+            <a class="footer-element" href="#aboutus">EQUIPO</a>
           </li>
-          <li class="footer-element footer-element-2">
-            <a href="">QUIÉNES SOMOS</a>
+          <li class="footer-element-2">
+            <a class="footer-element" href="#quienes-somos">QUIÉNES SOMOS</a>
           </li>
-          <li class="footer-element footer-element-3">
-            <a href="">CONTACTO</a>
+          <li class="footer-element-3">
+            <a class="footer-element" href="">CONTACTO</a>
           </li>
         </ul>
       </nav>
-      <img class="footer-logo" src="" alt="adalab logo" />
+      <img class="footer-logo" src="./images/logo-adalab.png" alt="adalab logo" />
     </footer>
   </body>
 </html>
