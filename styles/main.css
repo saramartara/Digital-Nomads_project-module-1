@@ -225,9 +225,6 @@
   flex-direction: column;
   justify-content: center;
   /*background-color: gold;*/
-  
-
-  
 }
 
 .footer-container {
@@ -252,8 +249,6 @@
   margin: auto;
   display: flex;
   padding-bottom: 3%;
-
-  
 }
 
 .footer-list {
