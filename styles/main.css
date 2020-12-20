@@ -37,9 +37,10 @@
 
 /*NUESTRO CÓDIGO EN CSS*/
 
-/*Hay que meter en variable los siguientes elementos; tamaño títulos, colores, font-family, letter-spacing, font-stretch, font-style, text-align. Revisar si me he dejado alguna*/
+/*Hay que meter en variable los siguientes elementos; tamaño títulos, colores, font-family, letter-spacing, font-stretch, font-style, text-align. Revisad si me he dejado alguna*/
 
 :root {
+  /*Colores que aparecen en el header*/
   --title-nav-color: white;
   --background-colordark: #099d8d;
   --background-colorlight: #14d9c4;
@@ -57,12 +58,13 @@
   font-style: normal;
   line-height: 1.88;
   letter-spacing: normal;
-  display: flex;
   /*border: rgb(164, 120, 206) 2px solid;*/
   flex-direction: column;
+  flex-wrap: wrap;
 }
 .headboard {
-  width: 320px;
+  box-sizing: border-box;
+  width: 100%;
   height: 60px;
   padding: 15px 80px;
   opacity: 0.95;
@@ -70,6 +72,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /*border: black solid 4px;*/
 }
 .name {
   font-family: OpenSans;
@@ -86,14 +89,17 @@
   display: inline;
 }
 .list {
+  box-sizing: border-box;
   display: flex;
+  justify-content: center;
+  width: 100%;
   list-style-type: none;
-  width: 320px;
   height: 45px;
   margin: 0px 0 0;
   padding: 8px 17px 7px 16px;
   opacity: 0.9;
   background-color: var(--background-colorlight);
+  /*border: black solid 4px;*/
 }
 .menu {
   height: 30px;
@@ -117,7 +123,51 @@
   width: 80px;
   margin: 0 0 0 15px;
 }
-
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.hero-image {
+  box-sizing: border-box;
+  background-image: url("fondo5blanco.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 100%;
+  height: 316px;
+  padding: 0 0 316px;
+  /*border: black solid 4px;*/
+}
+.slogan {
+  /*border: black 2px solid;*/
+  height: 80px;
+  width: fit-content;
+  text-align: center;
+  background-color: var(--title-nav-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: OpenSans;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.39;
+  letter-spacing: normal;
+  position: absolute;
+  /*chapucilla para centrar el eslogan*/
+  padding: 2px 50px 2px;
+  left: 44.2%;
+  top: 380px;
+}
+/*chapucilla para que se vea EQUIPO debajo del eslogan*/
+.back {
+  background-color: white;
+  height: 40px;
+  /*border: black solid 4px*/
+}
 .quienes-somos {
   font-family: Rubik;
   font-size: 24px;
@@ -177,18 +227,24 @@
 }
 
 .footer-1 {
-  width: 320px;
-  height: 250px;
-  margin: 2225px 0 0;
-  padding: 30px 74px 45px;
+  width: 15%;
+  height:20%;
+  padding: 2%;
   border: solid 1px #b8b8b9;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*background-color: gold;*/
+  
+
+  
 }
 
 .footer-container {
-  width: 172px;
+  width: auto;
   height: 20px;
-  margin: 0 0 20px;
+  margin: auto;
   font-family: OpenSans;
   font-size: 14px;
   font-weight: normal;
@@ -196,18 +252,24 @@
   font-style: normal;
   line-height: 1.43;
   letter-spacing: normal;
-  text-align: center;
   color: #b8b8b9;
-  display: flex;
+  display: inline-block;
+  /*background-color: darkblue;*/
+  align-items: center;
+  padding-bottom: 5%;
 }
 
 .footer-navigation-menu {
+  margin: auto;
+  display: flex;
+  padding-bottom: 3%;
+
+  
 }
 
 .footer-list {
-  width: 114px;
-  height: 60px;
-  margin: 20px 29px 30px;
+  width: 100%;
+  margin:auto;
   opacity: 0.75;
   font-family: OpenSans;
   font-size: 14px;
@@ -219,9 +281,14 @@
   text-align: center;
   color: #54585a;
   display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  /*background-color: deeppink;*/
 }
 
 .footer-element {
+  text-decoration: none;
+  color: #54585a;
 }
 
 .footer-element-1 {
@@ -234,7 +301,11 @@
 }
 
 .footer-logo {
-  width: 115.9px;
-  height: 45px;
-  margin: 30px 28.1px 0 28px;
+  width: 44%;
+  height: 30%;
+  margin: auto;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  
 }
