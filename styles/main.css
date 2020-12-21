@@ -129,11 +129,10 @@
 .aboutus {
   display: flexbox;
   flex-direction: column;
-  flex-wrap: wrap;
-  height: 504px;
-  padding: 30px 15px 45px;
-  justify-content: center;
   align-items: center;
+  /*flex-wrap: wrap;*/
+  /*height: 504px;*/
+  padding: 30px 15px 45px;
 }
 .equipo {
   box-sizing: border-box;
@@ -165,6 +164,9 @@
 }
 .container-strengths {
   background-color: #b8b8b9;
+  display: flexbox;
+  flex-direction: column;
+  align-items: center;
 }
 .strengths {
   display: flexbox;
@@ -173,7 +175,6 @@
   height: 579px;
   box-sizing: border-box;
   padding: 30px 15px 45px;
-  justify-content: center;
   align-items: center;
 }
 
@@ -188,7 +189,6 @@
   line-height: 2.05;
   letter-spacing: normal;
   text-align: center;
-  justify-content: center;
   color: var(--background-colordark);
 }
 .weaknessestitle {
