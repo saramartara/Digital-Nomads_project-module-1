@@ -113,7 +113,6 @@
   width: 100%;
 }
 .slogan {
-  text-align: center;
   background-color: var(--title-nav-color);
   font-family: var(--text);
   font-size: 18px;
@@ -126,17 +125,16 @@
   position: absolute;
   bottom: 0%;
   transform: translateY(50%);
-  /*border: black 2px solid;*/
 }
 /* EQUIPO */
-
 .aboutus {
   box-sizing: border-box;
-  display: flexbox;
+  display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 30px var(--margin-container);
+  padding: 40px var(--margin-container);
+  position: relative;
   /*flex-wrap: wrap;*/
   /*height: 504px;*/
 }
@@ -162,12 +160,20 @@
   text-align: center;
   color: var(--colordarkgrey);
 }
+.rectangle {
+  background: var(--title-nav-color);
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 0%;
+  transform: translateY(50%) rotate(45deg);
+}
 .container-strengths {
-  background-color: #b8b8b9;
-  display: flexbox;
+  background-color: rgba(184, 184, 185, 0.2);
+  display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px var(--margin-container);
+  padding: 20px var(--margin-container);
 }
 .strengths {
   display: flexbox;
@@ -268,7 +274,7 @@
   line-height: 2.25;
   letter-spacing: normal;
   text-align: center;
-  color: pink;
+  color: black;
   margin-top: 15px;
 }
 .paragraph {
@@ -307,7 +313,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 /*var(--margin-container);*/
+  margin: 0; /*var(--margin-container);*/
   /*background-color: gold;*/
 }
 
