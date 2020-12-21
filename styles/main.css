@@ -169,12 +169,22 @@
   text-align: center;
   color: var(--colordarkgrey);
 }
+.rectangle {
+  background: cyan;
+  margin-left: 45%;
+  display: flexbox;
+  flex-direction: row;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  transform: rotate(45deg);
+}
 .container-strengths {
   background-color: #b8b8b9;
   display: flexbox;
   flex-direction: column;
   align-items: center;
-  padding: 30px var(--margin-container);
+  padding: 20px var(--margin-container);
 }
 .strengths {
   display: flexbox;
