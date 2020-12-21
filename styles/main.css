@@ -40,26 +40,31 @@
 /*Hay que meter en variable los siguientes elementos; tamaño títulos, colores, font-family (Khol: yo no la pondría porque cada parrafo tiene un valor, o al menos lo definiría mucho en el nombre a que me refiero), letter-spacing, font-stretch, font-style, text-align. Revisad si me he dejado alguna*/
 
 :root {
-  /*Colores que aparecen en el header*/
+  /*Colores*/
   --title-nav-color: white;
   --background-colordark: #099d8d;
   --background-colorlight: #14d9c4;
+  --colordarkgrey: #54585a;
+  /*Fuentes*/
+  --title: rubik;
+  --text: OpenSans;
+  /*Márgenes*/
   --margin-container: 15px;
 }
 /*HEADER*/
 .page {
   width: 320px;
 }
-.container {
+.header {
   display: flex;
-  font-family: Rubik;
+  font-family: var(--title);
   font-size: 16px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.88;
   letter-spacing: normal;
-  /*border: rgb(164, 120, 206) 2px solid;*/
+  /*border: black 2px solid;*/
   flex-direction: column;
   flex-wrap: wrap;
 }
@@ -74,7 +79,7 @@
   /*border: black solid 4px;*/
 }
 .name {
-  font-family: OpenSans;
+  font-family: var(--text);
   font-size: 20px;
   font-weight: normal;
   font-stretch: normal;
@@ -83,7 +88,7 @@
   letter-spacing: normal;
   text-align: center;
   color: var(--title-nav-color);
-  margin: 15px 0;
+  margin: var(--margin-container) 0;
 }
 .navigation-menu {
   width: 100%;
@@ -109,38 +114,42 @@
   line-height: 2;
   letter-spacing: normal;
   color: var(--title-nav-color);
+  /*el color se puede quitar cuando se meta el enlace en CONTACTOS*/
 }
 .menu-color {
   color: var(--title-nav-color);
+  text-decoration: none; /*Este comando quita subrayado del enlace*/
 }
 .hero {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  height: 362px;
   align-items: center;
 }
-.hero-image {
+.image-container {
   box-sizing: border-box;
+  border: black solid 4px;
+}
+.hero-image {
   width: 100%;
-  /*border: black solid 4px;*/
 }
 .slogan {
-  /*border: black 2px solid;*/
+  border: black 2px solid;
   text-align: center;
   background-color: var(--title-nav-color);
-  font-family: OpenSans;
+  font-family: var(--text);
   font-size: 18px;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.39;
   letter-spacing: normal;
+  padding: 7px 15px 8px;
+  /* OTRA FORMA QUE "FUNCIONA" 
   position: absolute;
   z-index: 1;
-  padding: 7px 15px 8px;
-  margin: auto;
-  top: 314px;
+  top: 314px;*/
+  align-items: flex-end;
+  transform: translateY(-50%);
 }
 /* EQUIPO */
 
@@ -157,7 +166,7 @@
   box-sizing: border-box;
   height: 45px;
   margin: 0 99.5px 15px 101.5px;
-  font-family: Rubik;
+  font-family: var(--title);
   font-size: 24px;
   font-weight: 500;
   font-stretch: normal;
@@ -171,7 +180,7 @@
   height: 384px;
   width: auto;
   margin: 15px 0 0;
-  font-family: OpenSans;
+  font-family: var(--text);
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -179,7 +188,7 @@
   line-height: 1.5;
   letter-spacing: normal;
   text-align: center;
-  color: #54585a;
+  color: var(--colordarkgrey);
 }
 .container-strengths {
   background-color: #b8b8b9;
@@ -198,7 +207,7 @@
 .strengthstitle {
   height: 45px;
   width: auto;
-  font-family: Rubik;
+  font-family: var(--title);
   font-size: 22px;
   font-weight: 500;
   font-stretch: normal;
@@ -212,7 +221,7 @@
 .weaknessestitle {
   height: 45px;
   width: auto;
-  font-family: Rubik;
+  font-family: var(--title);
   font-size: 22px;
   font-weight: 500;
   font-stretch: normal;
@@ -225,7 +234,7 @@
 .strengthstext {
   height: 192px;
   margin: 45px 0 30px;
-  font-family: OpenSans;
+  font-family: var(--text);
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -233,12 +242,12 @@
   line-height: 1.5;
   letter-spacing: normal;
   text-align: center;
-  color: #54585a;
+  color: var(--colordarkgrey);
 }
 .weaknessestext {
   height: 192px;
   margin: 45px 0 30px;
-  font-family: OpenSans;
+  font-family: var(--text);
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -246,7 +255,7 @@
   line-height: 1.5;
   letter-spacing: normal;
   text-align: center;
-  color: #54585a;
+  color: var(--colordarkgrey);
 }
 
 /* SECTION ADALABERS. STYLES */
@@ -256,7 +265,7 @@
 }
 
 .quienes-somos {
-  font-family: Rubik;
+  font-family: var(--title);
   font-size: 24px;
   font-weight: 500;
   margin: 30px var(--margin-container);
@@ -284,7 +293,7 @@
 }
 
 .quienessomos-name {
-  font-family: OpenSans;
+  font-family: var(--text);
   font-size: 20px;
   font-weight: normal;
   font-stretch: normal;
@@ -297,7 +306,7 @@
 }
 .paragraph {
   width: 290px;
-  font-family: OpenSans;
+  font-family: var(--text);
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -306,7 +315,7 @@
   letter-spacing: normal;
   margin: 0 0 15px 0;
   text-align: center;
-  color: #54585a;
+  color: var(--colordarkgrey);
 }
 
 .links-contacto {
@@ -362,7 +371,7 @@
   width: 100%;
   margin: auto;
   opacity: 0.75;
-  font-family: OpenSans;
+  font-family: var(--text);
   font-size: 14px;
   font-weight: 600;
   font-stretch: normal;
@@ -370,7 +379,7 @@
   line-height: 1.43;
   letter-spacing: normal;
   text-align: center;
-  color: #54585a;
+  color: var(--colordarkgrey);
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -379,7 +388,7 @@
 
 .footer-element {
   text-decoration: none;
-  color: #54585a;
+  color: var(--colordarkgrey);
 }
 .footer-logo {
   width: 44%;
