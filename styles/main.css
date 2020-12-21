@@ -37,36 +37,40 @@
 
 /*NUESTRO CÓDIGO EN CSS*/
 
-/*Hay que meter en variable los siguientes elementos; tamaño títulos, colores, font-family, letter-spacing, font-stretch, font-style, text-align. Revisad si me he dejado alguna*/
+/*Hay que meter en variable los siguientes elementos; tamaño títulos, colores, font-family (Khol: yo no la pondría porque cada parrafo tiene un valor, o al menos lo definiría mucho en el nombre a que me refiero), letter-spacing, font-stretch, font-style, text-align. Revisad si me he dejado alguna*/
 
 :root {
-  /*Colores que aparecen en el header*/
+  /*Colores*/
   --title-nav-color: white;
   --background-colordark: #099d8d;
   --background-colorlight: #14d9c4;
+  --colordarkgrey: #54585a;
+  /*Fuentes*/
+  --title: rubik;
+  --text: OpenSans;
+  /*Márgenes*/
+  --margin-container: 15px;
 }
 /*HEADER*/
 .page {
   width: 320px;
 }
-.container {
+.header {
   display: flex;
-  font-family: Rubik;
+  font-family: var(--title);
   font-size: 16px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.88;
   letter-spacing: normal;
-  /*border: rgb(164, 120, 206) 2px solid;*/
+  /*border: black 2px solid;*/
   flex-direction: column;
   flex-wrap: wrap;
 }
 .headboard {
   box-sizing: border-box;
   width: 100%;
-  height: 60px;
-  padding: 15px 80px;
   opacity: 0.95;
   background-color: var(--background-colordark);
   display: flex;
@@ -75,7 +79,7 @@
   /*border: black solid 4px;*/
 }
 .name {
-  font-family: OpenSans;
+  font-family: var(--text);
   font-size: 20px;
   font-weight: normal;
   font-stretch: normal;
@@ -84,9 +88,10 @@
   letter-spacing: normal;
   text-align: center;
   color: var(--title-nav-color);
+  margin: var(--margin-container) 0;
 }
 .navigation-menu {
-  display: inline;
+  width: 100%;
 }
 .list {
   box-sizing: border-box;
@@ -94,15 +99,14 @@
   justify-content: center;
   width: 100%;
   list-style-type: none;
-  height: 45px;
   margin: 0px 0 0;
   padding: 8px 17px 7px 16px;
   opacity: 0.9;
   background-color: var(--background-colorlight);
   /*border: black solid 4px;*/
+  justify-content: space-around;
 }
 .menu {
-  height: 30px;
   font-size: 15px;
   font-weight: 500;
   font-stretch: normal;
@@ -110,20 +114,43 @@
   line-height: 2;
   letter-spacing: normal;
   color: var(--title-nav-color);
+  /*el color se puede quitar cuando se meta el enlace en CONTACTOS*/
 }
-.menu-1 {
-  width: 56px;
-  margin: 0 15px 0 0;
+.menu-color {
+  color: var(--title-nav-color);
+  text-decoration: none; /*Este comando quita subrayado del enlace*/
 }
-.menu-2 {
-  width: 121px;
-  margin: 0 15px;
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.menu-3 {
-  width: 80px;
-  margin: 0 0 0 15px;
+.image-container {
+  box-sizing: border-box;
+  border: black solid 4px;
 }
-
+.hero-image {
+  width: 100%;
+}
+.slogan {
+  border: black 2px solid;
+  text-align: center;
+  background-color: var(--title-nav-color);
+  font-family: var(--text);
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.39;
+  letter-spacing: normal;
+  padding: 7px 15px 8px;
+  /* OTRA FORMA QUE "FUNCIONA" 
+  position: absolute;
+  z-index: 1;
+  top: 314px;*/
+  align-items: flex-end;
+  transform: translateY(-50%);
+}
 /* EQUIPO */
 
 .aboutus {
@@ -138,7 +165,7 @@
   box-sizing: border-box;
   height: 45px;
   margin: 0 99.5px 15px 101.5px;
-  font-family: Rubik;
+  font-family: var(--title);
   font-size: 24px;
   font-weight: 500;
   font-stretch: normal;
@@ -152,7 +179,7 @@
   height: 384px;
   width: auto;
   margin: 15px 0 0;
-  font-family: OpenSans;
+  font-family: var(--text);
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -160,7 +187,7 @@
   line-height: 1.5;
   letter-spacing: normal;
   text-align: center;
-  color: #54585a;
+  color: var(--colordarkgrey);
 }
 .container-strengths {
   background-color: #b8b8b9;
@@ -181,7 +208,7 @@
 .strengthstitle {
   height: 45px;
   width: auto;
-  font-family: Rubik;
+  font-family: var(--title);
   font-size: 22px;
   font-weight: 500;
   font-stretch: normal;
@@ -194,7 +221,7 @@
 .weaknessestitle {
   height: 45px;
   width: auto;
-  font-family: Rubik;
+  font-family: var(--title);
   font-size: 22px;
   font-weight: 500;
   font-stretch: normal;
@@ -207,7 +234,7 @@
 .strengthstext {
   height: 192px;
   margin: 45px 0 30px;
-  font-family: OpenSans;
+  font-family: var(--text);
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -215,12 +242,12 @@
   line-height: 1.5;
   letter-spacing: normal;
   text-align: center;
-  color: #54585a;
+  color: var(--colordarkgrey);
 }
 .weaknessestext {
   height: 192px;
   margin: 45px 0 30px;
-  font-family: OpenSans;
+  font-family: var(--text);
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -228,53 +255,7 @@
   line-height: 1.5;
   letter-spacing: normal;
   text-align: center;
-  color: #54585a;
-}
-
-.hero {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-.hero-image {
-  box-sizing: border-box;
-  background-image: url("fondo5blanco.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  width: 100%;
-  height: 316px;
-  padding: 0 0 316px;
-  /*border: black solid 4px;*/
-}
-.slogan {
-  /*border: black 2px solid;*/
-  height: 80px;
-  width: fit-content;
-  text-align: center;
-  background-color: var(--title-nav-color);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-family: OpenSans;
-  font-size: 18px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.39;
-  letter-spacing: normal;
-  position: absolute;
-  /*chapucilla para centrar el eslogan*/
-  padding: 2px 50px 2px;
-  left: 44.2%;
-  top: 380px;
-}
-/*chapucilla para que se vea EQUIPO debajo del eslogan*/
-.back {
-  background-color: white;
-  height: 40px;
-  /*border: black solid 4px*/
+  color: var(--colordarkgrey);
 }
 
 /* SECTION ADALABERS. STYLES */
@@ -284,10 +265,10 @@
 }
 
 .quienes-somos {
-  font-family: Rubik;
+  font-family: var(--title);
   font-size: 24px;
   font-weight: 500;
-  margin: 30px 0;
+  margin: 30px var(--margin-container);
   font-stretch: normal;
   font-style: normal;
   line-height: 1.88;
@@ -297,7 +278,7 @@
 }
 
 .adalabers {
-  margin: 0 16px 0 16px;
+  margin: 0 var(--margin-container);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -312,7 +293,7 @@
 }
 
 .quienessomos-name {
-  font-family: OpenSans;
+  font-family: var(--text);
   font-size: 20px;
   font-weight: normal;
   font-stretch: normal;
@@ -325,7 +306,7 @@
 }
 .paragraph {
   width: 290px;
-  font-family: OpenSans;
+  font-family: var(--text);
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -334,13 +315,13 @@
   letter-spacing: normal;
   margin: 0 0 15px 0;
   text-align: center;
-  color: #54585a;
+  color: var(--colordarkgrey);
 }
 
 .links-contacto {
   display: flex;
   justify-content: center;
-  margin: 0 0 45px 0;
+  margin-bottom: 45px;
   width: 124px;
 }
 
@@ -351,14 +332,16 @@
 /* FOOTER STYLE */
 
 .footer-1 {
+  box-sizing: border-box;
   width: 100%;
   height: 20%;
-  padding: 2%;
+  padding: 30px;
   border: solid 1px #b8b8b9;
   background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: auto;
   /*background-color: gold;*/
 }
 
@@ -366,7 +349,7 @@
   width: auto;
   height: 20px;
   margin: auto;
-  font-family: OpenSans;
+  font-family: var(--text);
   font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
@@ -383,14 +366,14 @@
 .footer-navigation-menu {
   margin: auto;
   display: flex;
-  padding-bottom: 3%;
+  padding: 10px;
 }
 
 .footer-list {
   width: 100%;
   margin: auto;
   opacity: 0.75;
-  font-family: OpenSans;
+  font-family: var(--text);
   font-size: 14px;
   font-weight: 600;
   font-stretch: normal;
@@ -398,7 +381,7 @@
   line-height: 1.43;
   letter-spacing: normal;
   text-align: center;
-  color: #54585a;
+  color: var(--colordarkgrey);
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -407,22 +390,13 @@
 
 .footer-element {
   text-decoration: none;
-  color: #54585a;
+  color: var(--colordarkgrey);
 }
-
-.footer-element-1 {
-}
-
-.footer-element-2 {
-}
-
-.footer-element-3 {
-}
-
 .footer-logo {
   width: 44%;
   height: 30%;
   margin: auto;
+  padding: 15px;
   align-items: center;
   display: flex;
   justify-content: space-around;
