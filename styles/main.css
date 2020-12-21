@@ -120,7 +120,6 @@
   width: 100%;
 }
 .slogan {
-  text-align: center;
   background-color: var(--title-nav-color);
   font-family: var(--text);
   font-size: 18px;
