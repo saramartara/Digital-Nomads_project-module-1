@@ -114,7 +114,7 @@
   line-height: 2;
   letter-spacing: normal;
   color: var(--title-nav-color);
-  /*se puede quitar cuando se meta el enlace en CONTACTOS*/
+  /*el color se puede quitar cuando se meta el enlace en CONTACTOS*/
 }
 .menu-color {
   color: var(--title-nav-color);
@@ -123,18 +123,17 @@
 .hero {
   display: flex;
   flex-direction: column;
-  height: 362px;
   align-items: center;
 }
 .image-container {
   box-sizing: border-box;
+  border: black solid 4px;
 }
 .hero-image {
   width: 100%;
-  /*border: black solid 4px;*/
 }
 .slogan {
-  /*border: black 2px solid;*/
+  border: black 2px solid;
   text-align: center;
   background-color: var(--title-nav-color);
   font-family: var(--text);
@@ -150,7 +149,7 @@
   z-index: 1;
   top: 314px;*/
   align-items: flex-end;
-  transform: translateY(-60%);
+  transform: translateY(-50%);
 }
 /* EQUIPO */
 
