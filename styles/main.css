@@ -1,12 +1,5 @@
 @import url("reset.css");
 
-@font-face {
-  font-family: "FontAwesome5BrandsRegular";
-  src: url("../fonts/fa-brands-400.woff") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
 /* open-sans-regular - latin */
 @font-face {
   font-family: "Open Sans";
@@ -20,7 +13,7 @@
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/open-sans-v18-latin-600.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/open-sans-v18-latin-600.eot");
   src: url("../fonts/open-sans-v18-latin-600.woff2") format("woff2");
 }
 
@@ -29,7 +22,7 @@
   font-family: "Rubik";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/rubik-v11-latin-500.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/rubik-v11-latin-500.eot");
   src: url("../fonts/rubik-v11-latin-500.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
@@ -57,13 +50,6 @@
 }
 .header {
   display: flex;
-  font-family: var(--title);
-  font-size: 16px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.88;
-  letter-spacing: normal;
   /*border: black 2px solid;*/
   flex-direction: column;
   flex-wrap: wrap;
@@ -79,7 +65,7 @@
   /*border: black solid 4px;*/
 }
 .name {
-  font-family: var(--text);
+  font-family: var(--title);
   font-size: 20px;
   font-weight: normal;
   font-stretch: normal;
@@ -96,35 +82,31 @@
 .list {
   box-sizing: border-box;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   width: 100%;
   list-style-type: none;
-  margin: 0px 0 0;
   padding: 8px 17px 7px 16px;
   opacity: 0.9;
   background-color: var(--background-colorlight);
   /*border: black solid 4px;*/
-  justify-content: space-around;
-}
-.menu {
+  font-family: var(--title);
   font-size: 15px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
   line-height: 2;
   letter-spacing: normal;
-  color: var(--title-nav-color);
-  /*el color se puede quitar cuando se meta el enlace en CONTACTOS*/
 }
-.menu-color {
+.menu {
   color: var(--title-nav-color);
-  text-decoration: none; /*Este comando quita subrayado del enlace*/
+  text-decoration: none;
 }
 .hero {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
+  margin-bottom: var(--margin-container);
 }
 
 .hero-image {
@@ -132,7 +114,7 @@
 }
 .slogan {
   text-align: center;
-  background-color: cyan;
+  background-color: var(--title-nav-color);
   font-family: var(--text);
   font-size: 18px;
   font-weight: 600;
@@ -142,10 +124,9 @@
   letter-spacing: normal;
   padding: 7px 15px 8px;
   position: absolute;
-  bottom: 50%;
-  /*top: 2px;*/
-  /*align-items: flex-end;
-  transform: translateY(-50%);*/
+  bottom: 0%;
+  transform: translateY(50%);
+  /*border: black 2px solid;*/
 }
 /* EQUIPO */
 
@@ -250,7 +231,7 @@
   text-align: center;
 }
 
-.quienes-somos {
+.who-weare {
   font-family: var(--title);
   font-size: 24px;
   font-weight: 500;
@@ -278,7 +259,7 @@
   border: solid 5px rgba(0, 0, 0, 0.08);
 }
 
-.quienessomos-name {
+.whoweare-name {
   font-family: var(--text);
   font-size: 20px;
   font-weight: normal;
@@ -304,7 +285,7 @@
   color: var(--colordarkgrey);
 }
 
-.links-contacto {
+.links-contact {
   display: flex;
   justify-content: center;
   margin-bottom: 45px;
