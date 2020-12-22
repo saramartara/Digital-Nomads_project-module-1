@@ -1,24 +1,24 @@
 @import url("reset.css");
 
 /* open-sans-regular - latin */
-@font-face {
+/* @font-face {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/open-sans-v18-latin-regular.woff2") format("woff2");
 }
-
+ */
 /* open-sans-600 - latin */
-@font-face {
+/* @font-face {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
   src: url("../fonts/open-sans-v18-latin-600.eot");
   src: url("../fonts/open-sans-v18-latin-600.woff2") format("woff2");
-}
+} */
 
 /* rubik-500 - latin */
-@font-face {
+/* @font-face {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 500;
@@ -26,7 +26,7 @@
   src: url("../fonts/rubik-v11-latin-500.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
-}
+} */
 
 /*NUESTRO CÓDIGO EN CSS*/
 
@@ -39,14 +39,15 @@
   --background-colorlight: #14d9c4;
   --colordarkgrey: #54585a;
   /*Fuentes*/
-  --title: rubik;
-  --text: OpenSans;
+  --title: "Rubik", sans-serif;
+  --text: "Open Sans", sans-serif;
   /*Márgenes*/
   --margin-container: 15px;
 }
 /*HEADER*/
 .page {
-  width: 320px;
+  width: 100%;
+  scroll-behavior: smooth;
 }
 .header {
   display: flex;
@@ -176,7 +177,7 @@
   padding: 20px var(--margin-container);
 }
 .strengths {
-  display: flexbox;
+  display: flex;
   flex-direction: column;
   width: 100%;
   box-sizing: border-box;
@@ -233,7 +234,7 @@
 
 /* SECTION ADALABERS. STYLES */
 .section-adalabers {
-  width: 320px;
+  width: 100%;
   text-align: center;
 }
 
@@ -278,7 +279,7 @@
   margin-top: 15px;
 }
 .paragraph {
-  width: 290px;
+  width: 100%;
   font-family: var(--text);
   font-size: 16px;
   font-weight: normal;
@@ -296,6 +297,7 @@
   justify-content: center;
   margin-bottom: 45px;
   width: 124px;
+  color: var(--colordarkgrey);
 }
 
 .fa {
@@ -319,7 +321,7 @@
 
 .footer-container {
   width: auto;
-  font-family: OpenSans;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
