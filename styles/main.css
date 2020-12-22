@@ -1,24 +1,24 @@
 @import url("reset.css");
 
 /* open-sans-regular - latin */
-@font-face {
+/* @font-face {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/open-sans-v18-latin-regular.woff2") format("woff2");
 }
-
+ */
 /* open-sans-600 - latin */
-@font-face {
+/* @font-face {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
   src: url("../fonts/open-sans-v18-latin-600.eot");
   src: url("../fonts/open-sans-v18-latin-600.woff2") format("woff2");
-}
+} */
 
 /* rubik-500 - latin */
-@font-face {
+/* @font-face {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 500;
@@ -26,7 +26,7 @@
   src: url("../fonts/rubik-v11-latin-500.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
-}
+} */
 
 /*NUESTRO CÓDIGO EN CSS*/
 
@@ -39,7 +39,7 @@
   --background-colorlight: #14d9c4;
   --colordarkgrey: #54585a;
   /*Fuentes*/
-  --title: rubik;
+  --title: Rubik;
   --text: OpenSans;
   /*Márgenes*/
   --margin-container: 15px;
@@ -65,7 +65,7 @@
   /*border: black solid 4px;*/
 }
 .name {
-  font-family: var(--title);
+  font-family: var(--text);
   font-size: 20px;
   font-weight: normal;
   font-stretch: normal;
@@ -132,7 +132,7 @@
 
 .aboutus {
   box-sizing: border-box;
-  display: flexbox;
+  display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
@@ -164,13 +164,13 @@
 }
 .container-strengths {
   background-color: #b8b8b9;
-  display: flexbox;
+  display: flex;
   flex-direction: column;
   align-items: center;
   padding: 30px var(--margin-container);
 }
 .strengths {
-  display: flexbox;
+  display: flex;
   flex-direction: column;
   width: 100%;
   box-sizing: border-box;
