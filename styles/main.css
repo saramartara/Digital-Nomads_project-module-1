@@ -39,8 +39,8 @@
   --background-colorlight: #14d9c4;
   --colordarkgrey: #54585a;
   /*Fuentes*/
-  --title: Rubik;
-  --text: OpenSans;
+  --title: "Rubik", sans-serif;
+  --text: "Open Sans", sans-serif;
   /*Márgenes*/
   --margin-container: 15px;
 }
@@ -65,7 +65,7 @@
   /*border: black solid 4px;*/
 }
 .name {
-  font-family: var(--text);
+  font-family: var(--title);
   font-size: 20px;
   font-weight: normal;
   font-stretch: normal;
@@ -296,6 +296,7 @@
   justify-content: center;
   margin-bottom: 45px;
   width: 124px;
+  color: var(--colordarkgrey);
 }
 
 .fa {
@@ -319,7 +320,7 @@
 
 .footer-container {
   width: auto;
-  font-family: OpenSans;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
