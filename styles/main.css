@@ -375,3 +375,12 @@
   justify-content: space-around;
 }
 
+
+@media all and (min-width 768px){
+
+  .footer-1{
+    flex-direction: row;
+  }
+
+
+}
