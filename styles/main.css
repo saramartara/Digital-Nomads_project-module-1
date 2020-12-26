@@ -46,16 +46,18 @@
   scroll-behavior: smooth;
 }
 .header {
+  width: 100%;
+  opacity: 0.95;
+  background-color: var(--background-colordark);
   display: flex;
-  /*border: black 2px solid;*/
   flex-direction: column;
   flex-wrap: wrap;
+  position: fixed;
+  z-index: 10;
 }
 .headboard {
   box-sizing: border-box;
   width: 100%;
-  opacity: 0.95;
-  background-color: var(--background-colordark);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -372,6 +374,19 @@
 }
 
 @media all and (min-width: 768px) {
+  .list {
+    background-color: var(--background-colordark);
+  }
+  .slogan {
+    opacity: 0.8;
+    padding: 15px 30px;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    transform: none;
+    margin-left: 46px;
+  }
+
   .footer-1 {
     flex-direction: row;
     flex-wrap: wrap;
