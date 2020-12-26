@@ -28,10 +28,6 @@
   font-style: normal;
 }
 
-/*NUESTRO CÓDIGO EN CSS*/
-
-/*Hay que meter en variable los siguientes elementos; tamaño títulos, colores, font-family (Khol: yo no la pondría porque cada parrafo tiene un valor, o al menos lo definiría mucho en el nombre a que me refiero), letter-spacing, font-stretch, font-style, text-align. Revisad si me he dejado alguna*/
-
 :root {
   /*Colores*/
   --title-nav-color: white;
@@ -45,9 +41,6 @@
   --margin-container: 15px;
 }
 /*HEADER*/
-.page {
-  width: 320px;
-}
 .header {
   display: flex;
   /*border: black 2px solid;*/
