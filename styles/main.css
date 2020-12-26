@@ -1,24 +1,24 @@
 @import url("reset.css");
 
 /* open-sans-regular - latin */
-@font-face {
+/* @font-face {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/open-sans-v18-latin-regular.woff2") format("woff2");
 }
-
+ */
 /* open-sans-600 - latin */
-@font-face {
+/* @font-face {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
   src: url("../fonts/open-sans-v18-latin-600.eot");
   src: url("../fonts/open-sans-v18-latin-600.woff2") format("woff2");
-}
+} */
 
 /* rubik-500 - latin */
-@font-face {
+/* @font-face {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 500;
@@ -26,7 +26,7 @@
   src: url("../fonts/rubik-v11-latin-500.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
-}
+} */
 
 :root {
   /*Colores*/
@@ -35,12 +35,16 @@
   --background-colorlight: #14d9c4;
   --colordarkgrey: #54585a;
   /*Fuentes*/
-  --title: rubik;
-  --text: OpenSans;
+  --title: "Rubik", sans-serif;
+  --text: "Open Sans", sans-serif;
   /*Márgenes*/
   --margin-container: 15px;
 }
 /*HEADER*/
+.page {
+  width: 100%;
+  scroll-behavior: smooth;
+}
 .header {
   display: flex;
   /*border: black 2px solid;*/
@@ -169,7 +173,7 @@
   padding: 20px var(--margin-container);
 }
 .strengths {
-  display: flexbox;
+  display: flex;
   flex-direction: column;
   width: 100%;
   box-sizing: border-box;
@@ -226,7 +230,7 @@
 
 /* SECTION ADALABERS. STYLES */
 .section-adalabers {
-  width: 320px;
+  width: 100%;
   text-align: center;
 }
 
@@ -271,7 +275,7 @@
   margin-top: 15px;
 }
 .paragraph {
-  width: 290px;
+  width: 100%;
   font-family: var(--text);
   font-size: 16px;
   font-weight: normal;
@@ -289,6 +293,7 @@
   justify-content: center;
   margin-bottom: 45px;
   width: 124px;
+  color: var(--colordarkgrey);
 }
 
 .fa {
@@ -312,7 +317,7 @@
 
 .footer-container {
   width: auto;
-  font-family: OpenSans;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
@@ -357,11 +362,52 @@
   color: var(--colordarkgrey);
 }
 .footer-logo {
-  width: 44%;
-  height: 30%;
+  width: 116px;
+  height: 45px;
   margin: auto;
   padding: 15px;
   align-items: center;
   display: flex;
   justify-content: space-around;
+}
+
+@media all and (min-width: 768px) {
+  .footer-1 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+  }
+
+  .footer-container {
+    width: 50%;
+    height: 50%;
+    text-align: start;
+  }
+
+  .footer-navigation-menu {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    /*align-items: flex-end;*/
+  }
+
+  .footer-list {
+    height: 80px;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .footer-logo {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .logo-container {
+    position: absolute;
+    transform: translate(0, 80%);
+  }
 }
