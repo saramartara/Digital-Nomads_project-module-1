@@ -380,15 +380,21 @@
     flex-wrap: nowrap;
     align-items: center;
   }
+  .name{
+    width: 50%;
+    position: relative;
+    left: 0px;
+  }
 
   .list {
-    background-color: var(--background-colordark);}
+    background-color: var(--background-colordark);
+    position: relative;
+    right: 0px;}
     
   .hero {
-    padding-top: 120px;
+    padding-top: 75px;
     }
   .slogan {
-    border: 2px black solid;
     opacity: 0.8;
     padding: 15px 30px;
     position: absolute;
@@ -442,3 +448,5 @@
   .hero {
     height: 500px;
   }
+  .slogan {
+    margin-left: 138px;
