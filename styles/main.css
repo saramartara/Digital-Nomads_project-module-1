@@ -42,7 +42,7 @@
 }
 
 .centralcolumn {
-  margin: 0 var(--margin-container);
+  margin: 0 15px;
 }
 
 /*HEADER*/
@@ -131,17 +131,15 @@
   transform: translateY(50%);
 }
 /* EQUIPO */
+
 .aboutus {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  padding: 40px var(--margin-container);
   position: relative;
-  /*flex-wrap: wrap;*/
-  /*height: 504px;*/
 }
+
 .aboutustitle {
   font-family: var(--title);
   font-size: 24px;
@@ -153,6 +151,7 @@
   text-align: center;
   color: var(--background-colorlight);
 }
+
 .aboutustext1 {
   font-family: var(--text);
   font-size: 16px;
@@ -162,8 +161,10 @@
   line-height: 1.5;
   letter-spacing: normal;
   text-align: center;
+  padding: 40px;
   color: var(--colordarkgrey);
 }
+
 .rectangle {
   background: var(--title-nav-color);
   width: 30px;
@@ -172,6 +173,7 @@
   bottom: 0%;
   transform: translateY(50%) rotate(45deg);
 }
+
 .container-strengths {
   background-color: rgba(184, 184, 185, 0.2);
   display: flex;
@@ -179,6 +181,7 @@
   align-items: center;
   padding: 20px var(--margin-container);
 }
+
 .strengths {
   display: flex;
   flex-direction: column;
@@ -199,6 +202,7 @@
   text-align: center;
   color: var(--background-colordark);
 }
+
 .weaknessestitle {
   width: auto;
   font-family: var(--title);
@@ -212,6 +216,7 @@
   color: var(--background-colordark);
   margin-top: 30px;
 }
+
 .strengthstext {
   font-family: var(--text);
   font-size: 16px;
@@ -223,6 +228,7 @@
   text-align: center;
   color: var(--colordarkgrey);
 }
+
 .weaknessestext {
   font-family: var(--text);
   font-size: 16px;
@@ -378,6 +384,9 @@
 }
 
 @media all and (min-width: 768px) {
+  .centralcolumn {
+    margin: 0 45px;
+  }
   .headboard {
     display: flex;
     flex-direction: row;
@@ -395,7 +404,6 @@
     position: relative;
     right: 0px;
   }
-
   .hero {
     padding-top: 75px;
   }
@@ -408,29 +416,33 @@
     transform: none;
     margin-left: 46px;
   }
-  .aboutustext1 {
-    border: 1px solid white;
-    margin: 0 45px;
-  }
+
   .container-strengths {
     flex-direction: row;
     align-items: flex-start;
+    justify-content: center;
   }
+
   .strengths {
-    flex-grow: 1;
+    width: 50%;
   }
+
   .weaknesses {
-    flex-grow: 1;
+    width: 50%;
   }
+
   .weaknessestitle {
     margin: 0;
   }
+
   .strengthstext {
-    margin: 0 21.1px 45px 0;
+    margin-right: 22.5px;
   }
+
   .weaknessestext {
-    margin: 0 45px 0 21.1px;
+    margin-left: 22.5px;
   }
+
   .footer-1 {
     flex-direction: row;
     flex-wrap: wrap;
@@ -467,6 +479,9 @@
 }
 
 @media all and (min-width: 1200px) {
+  .centralcolumn {
+    margin: 0 138px;
+  }
   .hero {
     height: 500px;
   }
@@ -474,12 +489,18 @@
     margin-left: 138px;
   }
   .aboutustext1 {
-    margin: 0 138px;
+    margin: 161px;
+  }
+  .strengths {
+    width: 50%;
+  }
+  .weaknesses {
+    width: 50%;
   }
   .strengthstext {
-    margin: 0 21.1px 138px 0;
+    margin-right: 22.5px;
   }
   .weaknessestext {
-    margin: 0 138px 0 21.1px;
+    margin-left: 22.5px;
   }
 }
