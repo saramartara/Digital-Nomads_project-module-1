@@ -48,7 +48,6 @@
 .header {
   width: 100%;
   opacity: 0.95;
-  background-color: var(--background-colordark);
   position: fixed;
   z-index: 10;
 }
@@ -82,11 +81,11 @@
   box-sizing: border-box;
   display: flex;
   justify-content: space-around;
+  background-color: var(--background-colorlight);
   width: 100%;
   list-style-type: none;
   padding: 8px 17px 7px 16px;
   opacity: 0.9;
-  background-color: var(--background-colorlight);
   /*border: black solid 4px;*/
   font-family: var(--title);
   font-size: 15px;
@@ -375,8 +374,16 @@
 }
 
 @media all and (min-width: 768px) {
+  .headboard{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
   .list {
-    background-color: var(--background-colordark);
+    background-color: var(--background-colordark);}
+    
   .hero {
     padding-top: 0px;
     height: 421px;
