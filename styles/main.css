@@ -1,24 +1,24 @@
 @import url("reset.css");
 
 /* open-sans-regular - latin */
-/* @font-face {
+@font-face {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/open-sans-v18-latin-regular.woff2") format("woff2");
 }
- */
+
 /* open-sans-600 - latin */
-/* @font-face {
+@font-face {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
   src: url("../fonts/open-sans-v18-latin-600.eot");
   src: url("../fonts/open-sans-v18-latin-600.woff2") format("woff2");
-} */
+}
 
 /* rubik-500 - latin */
-/* @font-face {
+@font-face {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 500;
@@ -26,7 +26,11 @@
   src: url("../fonts/rubik-v11-latin-500.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
-} */
+}
+
+/*NUESTRO CÓDIGO EN CSS*/
+
+/*Hay que meter en variable los siguientes elementos; tamaño títulos, colores, font-family (Khol: yo no la pondría porque cada parrafo tiene un valor, o al menos lo definiría mucho en el nombre a que me refiero), letter-spacing, font-stretch, font-style, text-align. Revisad si me he dejado alguna*/
 
 :root {
   /*Colores*/
@@ -35,29 +39,31 @@
   --background-colorlight: #14d9c4;
   --colordarkgrey: #54585a;
   /*Fuentes*/
-  --title: "Rubik", sans-serif;
-  --text: "Open Sans", sans-serif;
+  --title: rubik;
+  --text: OpenSans;
   /*Márgenes*/
   --margin-container: 15px;
 }
 /*HEADER*/
 .page {
-  width: 100%;
-  scroll-behavior: smooth;
+  /*width: 320px;*/
+}
+.middlecolumn {
+  background-color: pink;
+  margin: 0 15px;
 }
 .header {
-  width: 100%;
-  opacity: 0.95;
-  position: fixed;
-  z-index: 10;
+  display: flex;
+  /*border: black 2px solid;*/
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 .headboard {
   box-sizing: border-box;
   width: 100%;
+  opacity: 0.95;
   background-color: var(--background-colordark);
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   /*border: black solid 4px;*/
@@ -81,11 +87,11 @@
   box-sizing: border-box;
   display: flex;
   justify-content: space-around;
-  background-color: var(--background-colorlight);
   width: 100%;
   list-style-type: none;
   padding: 8px 17px 7px 16px;
   opacity: 0.9;
+  background-color: var(--background-colorlight);
   /*border: black solid 4px;*/
   font-family: var(--title);
   font-size: 15px;
@@ -104,7 +110,6 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  padding-top: 120px;
   margin-bottom: var(--margin-container);
 }
 
@@ -133,7 +138,7 @@
   align-items: center;
   width: 100%;
   padding: 40px var(--margin-container);
-  position: relative;
+  position: relative; /*para el rombo*/
   /*flex-wrap: wrap;*/
   /*height: 504px;*/
 }
@@ -158,6 +163,7 @@
   letter-spacing: normal;
   text-align: center;
   color: var(--colordarkgrey);
+  margin: 0 15px;
 }
 .rectangle {
   background: var(--title-nav-color);
@@ -175,7 +181,14 @@
   padding: 20px var(--margin-container);
 }
 .strengths {
-  display: flex;
+  display: flexbox;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+}
+.weaknesses {
+  display: flexbox;
   flex-direction: column;
   width: 100%;
   box-sizing: border-box;
@@ -217,6 +230,7 @@
   letter-spacing: normal;
   text-align: center;
   color: var(--colordarkgrey);
+  margin: 0 15px;
 }
 .weaknessestext {
   font-family: var(--text);
@@ -228,11 +242,12 @@
   letter-spacing: normal;
   text-align: center;
   color: var(--colordarkgrey);
+  margin: 0 15px;
 }
 
 /* SECTION ADALABERS. STYLES */
 .section-adalabers {
-  width: 100%;
+  width: 320px;
   text-align: center;
 }
 
@@ -277,7 +292,7 @@
   margin-top: 15px;
 }
 .paragraph {
-  width: 100%;
+  width: 290px;
   font-family: var(--text);
   font-size: 16px;
   font-weight: normal;
@@ -295,7 +310,6 @@
   justify-content: center;
   margin-bottom: 45px;
   width: 124px;
-  color: var(--colordarkgrey);
 }
 
 .fa {
@@ -319,7 +333,7 @@
 
 .footer-container {
   width: auto;
-  font-family: "Open Sans", sans-serif;
+  font-family: OpenSans;
   font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
@@ -364,23 +378,24 @@
   color: var(--colordarkgrey);
 }
 .footer-logo {
-  width: 116px;
-  height: 45px;
+  width: 44%;
+  height: 30%;
   margin: auto;
   padding: 15px;
   align-items: center;
   display: flex;
   justify-content: space-around;
 }
+/*Responsive Equipo*/
 
 @media all and (min-width: 768px) {
-  .headboard{
+  .headboard {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
   }
-  .name{
+  .name {
     width: 50%;
     position: relative;
     left: 0px;
@@ -389,11 +404,12 @@
   .list {
     background-color: var(--background-colordark);
     position: relative;
-    right: 0px;}
-    
+    right: 0px;
+  }
+
   .hero {
     padding-top: 75px;
-    }
+  }
   .slogan {
     opacity: 0.8;
     padding: 15px 30px;
@@ -404,49 +420,51 @@
     margin-left: 46px;
   }
 
-  .footer-1 {
+  .aboutustext1 {
+    border: 1px solid white;
+    margin: 0 45px;
+  }
+  .container-strengths {
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 30px;
+    align-items: flex-start;
+    /* justify-content: space-between; */
+    /*padding: 20px var(--margin-container);*/
   }
-
-  .footer-container {
-    width: 50%;
-    height: 50%;
-    text-align: start;
+  .strengths {
+    /* width: 50%; */ /*PARECE QUE FUNCIONA IGUAL CON WIDTH 50% QUE CON FLEX-GROW:1*/
+    flex-grow: 1;
+    border: 2px solid black;
   }
-
-  .footer-navigation-menu {
-    width: 50%;
-    margin: 0;
-    padding: 0;
-    text-align: right;
-    /*align-items: flex-end;*/
+  .weaknesses {
+    /* width: 50%; */
+    flex-grow: 1;
+    border: 2px solid black;
   }
-
-  .footer-list {
-    height: 80px;
-    align-items: flex-end;
-    justify-content: space-between;
+  .weaknessestitle {
     margin: 0;
   }
-
-  .footer-logo {
-    width: 50%;
-    margin: 0;
-    padding: 0;
+  .strengthstext {
+    margin: 0 21.1px 45px 0; /*dudas con ésto*/
   }
-
-  .logo-container {
-    position: absolute;
-    transform: translate(0, 80%);
+  .weaknessestext {
+    margin: 0 45px 0 21.1px;
   }
 }
-
 @media all and (min-width: 1200px) {
   .hero {
     height: 500px;
   }
   .slogan {
     margin-left: 138px;
+  }
+
+  .aboutustext1 {
+    margin: 0 138px;
+  }
+  .strengthstext {
+    margin: 0 21.1px 138px 0; /*dudas con ésto*/
+  }
+  .weaknessestext {
+    margin: 0 138px 0 21.1px;
+  }
+}
