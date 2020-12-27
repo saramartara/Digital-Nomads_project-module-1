@@ -49,16 +49,16 @@
   width: 100%;
   opacity: 0.95;
   background-color: var(--background-colordark);
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   position: fixed;
   z-index: 10;
 }
 .headboard {
   box-sizing: border-box;
   width: 100%;
+  background-color: var(--background-colordark);
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   /*border: black solid 4px;*/
@@ -105,6 +105,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  padding-top: 120px;
   margin-bottom: var(--margin-container);
 }
 
@@ -376,6 +377,9 @@
 @media all and (min-width: 768px) {
   .list {
     background-color: var(--background-colordark);
+  .hero {
+    padding-top: 0px;
+    height: 421px;
   }
   .slogan {
     opacity: 0.8;
@@ -426,3 +430,8 @@
     transform: translate(0, 80%);
   }
 }
+
+@media all and (min-width: 1200px) {
+  .hero {
+    height: 500px;
+  }
