@@ -46,8 +46,14 @@
 }
 /*HEADER*/
 .page {
-  width: 320px;
+  /*width: 320px;*/
 }
+
+.middlecolumn {
+  background-color: pink;
+  margin: 0 15px;
+}
+
 .header {
   display: flex;
   /*border: black 2px solid;*/
@@ -134,7 +140,7 @@
   align-items: center;
   width: 100%;
   padding: 40px var(--margin-container);
-  position: relative;
+  position: relative; /*para el rombo*/
   /*flex-wrap: wrap;*/
   /*height: 504px;*/
 }
@@ -159,6 +165,7 @@
   letter-spacing: normal;
   text-align: center;
   color: var(--colordarkgrey);
+  margin: 0 15px;
 }
 .rectangle {
   background: var(--title-nav-color);
@@ -176,6 +183,13 @@
   padding: 20px var(--margin-container);
 }
 .strengths {
+  display: flexbox;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+}
+.weaknesses {
   display: flexbox;
   flex-direction: column;
   width: 100%;
@@ -218,6 +232,7 @@
   letter-spacing: normal;
   text-align: center;
   color: var(--colordarkgrey);
+  margin: 0 15px;
 }
 .weaknessestext {
   font-family: var(--text);
@@ -229,6 +244,7 @@
   letter-spacing: normal;
   text-align: center;
   color: var(--colordarkgrey);
+  margin: 0 15px;
 }
 
 /* SECTION ADALABERS. STYLES */
@@ -371,4 +387,48 @@
   align-items: center;
   display: flex;
   justify-content: space-around;
+}
+/*Responsive Equipo*/
+
+@media all and (min-width: 768px) {
+  .aboutustext1 {
+    border: 1px solid white;
+    margin: 0 45px;
+  }
+  .container-strengths {
+    flex-direction: row;
+    align-items: flex-start;
+    /* justify-content: space-between; */
+    /*padding: 20px var(--margin-container);*/
+  }
+  .strengths {
+    /* width: 50%; */ /*PARECE QUE FUNCIONA IGUAL CON WIDTH 50% QUE CON FLEX-GROW:1*/
+    flex-grow: 1;
+    border: 2px solid black;
+  }
+  .weaknesses {
+    /* width: 50%; */
+    flex-grow: 1;
+    border: 2px solid black;
+  }
+  .weaknessestitle {
+    margin: 0;
+  }
+  .strengthstext {
+    margin: 0 21.1px 45px 0; /*dudas con ésto*/
+  }
+  .weaknessestext {
+    margin: 0 45px 0 21.1px;
+  }
+}
+@media all and (min-width: 1200px) {
+  .aboutustext1 {
+    margin: 0 138px;
+  }
+  .strengthstext {
+    margin: 0 21.1px 138px 0; /*dudas con ésto*/
+  }
+  .weaknessestext {
+    margin: 0 138px 0 21.1px;
+  }
 }
