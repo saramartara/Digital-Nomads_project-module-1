@@ -385,10 +385,10 @@
     background-color: var(--background-colordark);}
     
   .hero {
-    padding-top: 0px;
-    height: 421px;
-  }
+    padding-top: 120px;
+    }
   .slogan {
+    border: 2px black solid;
     opacity: 0.8;
     padding: 15px 30px;
     position: absolute;
