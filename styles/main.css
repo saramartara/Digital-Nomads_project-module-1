@@ -446,12 +446,17 @@
   }
 
   /* Adalabers section */
+
+  .who-weare {
+    margin: 45px 0 41px 0;
+  }
   .adalabers {
     margin-bottom: 60px;
+    align-items: flex-start;
   }
 
   .adalabers-info {
-    min-height: 205px;
+    /*     min-height: 100%; */
     margin-top: 0;
   }
 
@@ -463,7 +468,6 @@
   .adal-Sara,
   .adal-Maria {
     flex-direction: row-reverse;
-    align-items: flex-end;
     text-align: right;
   }
 
@@ -537,7 +541,6 @@
   .centralcolumn {
     margin: 0 138px;
   }
-
   .hero {
     height: 500px;
   }
@@ -552,5 +555,23 @@
   }
   .weaknessestext {
     margin: 0 138px 0 21.1px;
+  }
+
+  /* Adalabers section */
+
+  .who-weare {
+    margin: 45px 0 41px 0;
+  }
+
+  .adalabers {
+    margin-bottom: 60px;
+  }
+
+  .photo {
+    width: 278px;
+    height: 278px;
+  }
+  .paragraph {
+    width: 440px;
   }
 }
