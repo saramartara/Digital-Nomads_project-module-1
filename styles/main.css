@@ -309,16 +309,20 @@
 /* FOOTER STYLE */
 
 .footer-1 {
+  background-color: white;
+  border: solid 1px #b8b8b9;
+  margin: 0;
+  width: 100%;
+  /*background-color: gold;*/
+}
+
+.footer-big-container{
   box-sizing: border-box;
   width: 100%;
-  padding: 25px;
-  border: solid 1px #b8b8b9;
-  background-color: white;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0; /*var(--margin-container);*/
-  /*background-color: gold;*/
 }
 
 .footer-container {
@@ -431,11 +435,13 @@
   .weaknessestext {
     margin: 0 45px 0 21.1px;
   }
-  .footer-1 {
+
+  .footer-big-container{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 30px;
+    padding: 40px;
+
   }
   .footer-container {
     width: 50%;
@@ -482,4 +488,12 @@
   .weaknessestext {
     margin: 0 138px 0 21.1px;
   }
+
+
+
+
+
+
+
+  
 }
