@@ -65,6 +65,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin: 0;
   /*border: black solid 4px;*/
 }
 .name {
@@ -77,7 +78,7 @@
   letter-spacing: normal;
   text-align: center;
   color: var(--title-nav-color);
-  margin: var(--margin-container) 0;
+  margin: 0 var(--margin-container);
 }
 .navigation-menu {
   width: 100%;
@@ -109,7 +110,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  padding-top: 120px;
+  padding-top: 90px;
   margin-bottom: var(--margin-container);
 }
 
@@ -378,26 +379,39 @@
 }
 
 @media all and (min-width: 768px) {
+  :root {
+    --margin-container: 45px;
+  }
+  .centralcolumn {
+    margin: 0 var(--margin-container);
+  }
   .headboard {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
+    height: 60px;
+    margin: 0px;
   }
   .name {
     width: 50%;
-    position: relative;
-    left: 0px;
+    text-align: start;
+    margin-left: var(--margin-container);
   }
-
   .list {
     background-color: var(--background-colordark);
     position: relative;
-    right: 0px;
+    justify-content: flex-end;
+    padding: 16px 0px 14px;
   }
-
+  .menu2 {
+    padding: 0 18px 0 19px;
+  }
+  .menu3 {
+    padding-right: var(--margin-container);
+  }
   .hero {
-    padding-top: 75px;
+    padding-top: 60px;
   }
   .slogan {
     opacity: 0.8;
@@ -406,7 +420,6 @@
     bottom: 0%;
     left: 0%;
     transform: none;
-    margin-left: 46px;
   }
   .aboutustext1 {
     border: 1px solid white;
@@ -467,11 +480,20 @@
 }
 
 @media all and (min-width: 1200px) {
-  .hero {
-    padding-top: 75px;
+  :root {
+    --margin-container: 138px;
+  }
+  .centralcolumn {
+    margin: 0 var(--margin-container);
+  }
+  .headboard {
+    margin: 0px;
+  }
+  .menu3 {
+    padding-right: var(--margin-container);
   }
   .slogan {
-    margin-left: 138px;
+    margin-left: var(--margin-container);
   }
   .aboutustext1 {
     margin: 0 138px;
