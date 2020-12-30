@@ -238,7 +238,7 @@
 /* SECTION ADALABERS. STYLES */
 .section-adalabers {
   width: 100%;
-  text-align: center;
+  /*   text-align: center; */
 }
 
 .who-weare {
@@ -255,9 +255,19 @@
 }
 
 .adalabers {
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.adalabers-info {
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .photo {
@@ -276,9 +286,9 @@
   font-style: normal;
   line-height: 2.25;
   letter-spacing: normal;
-  text-align: center;
+  /*   text-align: center; */
   color: black;
-  margin-top: 15px;
+  /*     margin-top: 15px; */
 }
 .paragraph {
   width: 100%;
@@ -289,15 +299,15 @@
   font-style: normal;
   line-height: 1.5;
   letter-spacing: normal;
-  margin: 0 0 15px 0;
-  text-align: center;
+  /*   margin: 0 0 15px 0; */
+  /*   text-align: center; */
   color: var(--colordarkgrey);
 }
 
 .links-contact {
   display: flex;
   justify-content: center;
-  margin-bottom: 45px;
+  margin-top: 15px;
   width: 124px;
   color: var(--colordarkgrey);
 }
@@ -308,20 +318,24 @@
 }
 /* FOOTER STYLE */
 
-.footer-1 {
-  box-sizing: border-box;
-  width: 100%;
-  padding: 25px;
-  border: solid 1px #b8b8b9;
+.footer {
   background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0; /*var(--margin-container);*/
-  /*background-color: gold;*/
+  border-top: solid 1px #b8b8b9;
+  margin: 0;
+  width: 100%;
 }
 
 .footer-container {
+  box-sizing: border-box;
+  /*width: 100%;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 45px;
+}
+
+.footer-copyright {
   width: auto;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -332,10 +346,8 @@
   letter-spacing: normal;
   color: #b8b8b9;
   display: inline;
-  /*background-color: darkblue;*/
   text-align: center;
 
-  /*padding-bottom: 5%;*/
 }
 
 .footer-navigation-menu {
@@ -371,13 +383,16 @@
   width: 116px;
   height: 45px;
   margin: auto;
-  padding: 15px;
+  /*padding: 15px;*/
   align-items: center;
   display: flex;
   justify-content: space-around;
 }
 
 @media all and (min-width: 768px) {
+  .centralcolumn {
+    margin: 0 45px;
+  }
   .headboard {
     display: flex;
     flex-direction: row;
@@ -431,13 +446,75 @@
   .weaknessestext {
     margin: 0 45px 0 21.1px;
   }
-  .footer-1 {
+
+  /* Adalabers section */
+
+  .who-weare {
+    margin: 45px 0 41px 0;
+  }
+  .adalabers {
+    margin-bottom: 60px;
+    align-items: flex-start;
+  }
+
+  .adalabers-info {
+    /*     min-height: 100%; */
+    margin-top: 0;
+  }
+
+  .adal-Cristina,
+  .adal-Amanda {
+    flex-direction: row;
+  }
+
+  .adal-Sara,
+  .adal-Maria {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+
+  .info-Cristina,
+  .info-Amanda {
+    margin-left: 30px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .info-Maria,
+  .info-Sara {
+    margin-right: 30px;
+    align-items: flex-end;
+    text-align: right;
+  }
+
+  .info-Cristina .links-contact,
+  .info-Amanda .links-contact {
+    justify-content: flex-start;
+  }
+
+  .info-Maria .links-contact,
+  .info-Sara .links-contact {
+    justify-content: flex-end;
+  }
+
+  .photo {
+    width: 205px;
+    height: 205px;
+  }
+  /* Footer */
+
+  
+  .footer-container {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 30px;
+    margin-top: 24px;
+    margin-bottom: 56px;
+    
+
   }
-  .footer-container {
+  .footer-copyright {
     width: 50%;
     height: 50%;
     text-align: start;
@@ -458,7 +535,7 @@
   .footer-logo {
     width: 50%;
     margin: 0;
-    padding: 0;
+    
   }
   .logo-container {
     position: absolute;
@@ -467,6 +544,9 @@
 }
 
 @media all and (min-width: 1200px) {
+  .centralcolumn {
+    margin: 0 138px;
+  }
   .hero {
     padding-top: 75px;
   }
@@ -482,4 +562,36 @@
   .weaknessestext {
     margin: 0 138px 0 21.1px;
   }
+
+
+
+
+
+  
+  /* Adalabers section */
+
+  .who-weare {
+    margin: 45px 0 41px 0;
+  }
+
+  .adalabers {
+    margin-bottom: 60px;
+  }
+
+  .photo {
+    width: 278px;
+    height: 278px;
+  }
+  .paragraph {
+    width: 440px;
+  }
+
+
+  /*Footer*/
+  
+.footer-container{
+  margin-top: 24px;
+  margin-bottom: 47px;
+}
+
 }
