@@ -381,10 +381,10 @@
 @media all and (min-width: 768px) {
   /*:root {
     --margin-container: 45px;
-  }
-  .centralcolumn {
-    margin: 0 var(--margin-container);
   }*/
+  .centralcolumn {
+    margin: 0 45px;
+  }
   /*header - hero*/
 
   .headboard {
@@ -398,7 +398,7 @@
   .name {
     width: 50%;
     text-align: start;
-    margin-left: 45px);
+    margin-left: 45px;
   }
   .list {
     background-color: var(--background-colordark);
@@ -484,13 +484,16 @@
 @media all and (min-width: 1200px) {
   /*:root {
     --margin-container: 138px;
-  }
-  .centralcolumn {
-    margin: 0 var(--margin-container);
   }*/
+  .centralcolumn {
+    margin: 0 138px;
+  }
   /*header - hero*/
   .headboard {
     margin: 0px;
+  }
+  .name {
+    margin-left: 138px;
   }
   .menu3 {
     padding-right: 138px;
