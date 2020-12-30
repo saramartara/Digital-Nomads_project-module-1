@@ -385,6 +385,8 @@
   .centralcolumn {
     margin: 0 var(--margin-container);
   }
+  /*header - hero*/
+
   .headboard {
     display: flex;
     flex-direction: row;
@@ -486,6 +488,7 @@
   .centralcolumn {
     margin: 0 var(--margin-container);
   }
+  /*header - hero*/
   .headboard {
     margin: 0px;
   }
