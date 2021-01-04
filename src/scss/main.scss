@@ -135,15 +135,18 @@ table {
     --background-colordark: #099d8d;
     --background-colorlight: #14d9c4;
     --colordarkgrey: #54585a;
+    --colortextfooter: #b8b8b9;
     /*Fuentes*/
     --title: "Rubik", sans-serif;
     --text: "Open Sans", sans-serif;
     /*Márgenes*/
-    --margin-container: 15px;
+    --margin-container-mobile: 15px;
+    --margin-container-tablet: 45px;
+    --margin-container-desktop: 138px;
   }
   
   .centralcolumn {
-    margin: 0 15px;
+    margin: 0 var(--margin-container-mobile);
   }
   
   /*HEADER*/
@@ -179,7 +182,7 @@ table {
     letter-spacing: normal;
     text-align: center;
     color: var(--title-nav-color);
-    margin: 0 var(--margin-container);
+    margin: 0 var(--margin-container-mobile);
   }
   .navigation-menu {
     width: 100%;
@@ -212,7 +215,7 @@ table {
     align-items: center;
     position: relative;
     padding-top: 90px;
-    margin-bottom: var(--margin-container);
+    margin-bottom: var(--margin-container-mobile);
   }
   
   .hero-image {
@@ -419,8 +422,8 @@ table {
   /* FOOTER STYLE */
   
   .footer {
-    background-color: white;
-    border-top: solid 1px #b8b8b9;
+    background-color: var(--title-nav-color);
+    border-top: solid 1px var(--colortextfooter);
     margin: 0;
     width: 100%;
   }
@@ -444,7 +447,7 @@ table {
     font-style: normal;
     line-height: 1.43;
     letter-spacing: normal;
-    color: #b8b8b9;
+    color: var(--colortextfooter);
     display: inline;
     text-align: center;
   }
@@ -493,7 +496,7 @@ table {
       --margin-container: 45px;
     }*/
     .centralcolumn {
-      margin: 0 45px;
+      margin: 0 var(--margin-container-tablet);
     }
     /*header - hero*/
   
@@ -508,7 +511,7 @@ table {
     .name {
       width: 50%;
       text-align: start;
-      margin-left: 45px;
+      margin-left: var(--margin-container-tablet);
     }
     .list {
       background-color: var(--background-colordark);
@@ -520,7 +523,7 @@ table {
       padding: 0 18px 0 19px;
     }
     .menu3 {
-      padding-right: 45px;
+      padding-right: var(--margin-container-tablet);
     }
     .hero {
       padding-top: 60px;
@@ -652,20 +655,20 @@ table {
       --margin-container: 138px;
     }*/
     .centralcolumn {
-      margin: 0 138px;
+      margin: 0 var(--margin-container-desktop);
     }
     /*header - hero*/
     .headboard {
       margin: 0px;
     }
     .name {
-      margin-left: 138px;
+      margin-left: var(--margin-container-desktop);
     }
     .menu3 {
-      padding-right: 138px;
+      padding-right: var(--margin-container-desktop);
     }
     .slogan {
-      margin-left: 138px;
+      margin-left: var(--margin-container-desktop);
     }
     .aboutustext1 {
       padding: 0 162px;
