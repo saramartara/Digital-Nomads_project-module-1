@@ -1,0 +1,40 @@
+.aboutus {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+.aboutustitle {
+  font-family: var(--title);
+  font-size: 24px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  color: var(--background-colorlight);
+}
+
+.aboutustext {
+  font-family: var(--text);
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  padding: 40px;
+  color: var(--colordarkgrey);
+}
+
+.rectangle {
+  background: var(--title-nav-color);
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 0%;
+  transform: translateY(50%) rotate(45deg);
+}

@@ -1,0 +1,26 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-top: 90px;
+  margin-bottom: var(--margin-container-mobile);
+}
+
+.hero-image {
+  width: 100%;
+}
+.slogan {
+  background-color: var(--title-nav-color);
+  font-family: var(--text);
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.39;
+  letter-spacing: normal;
+  padding: 7px 15px 8px;
+  position: absolute;
+  bottom: 0%;
+  transform: translateY(50%);
+}

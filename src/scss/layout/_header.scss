@@ -1,5 +1,60 @@
-.page__header {
+/*HEADER*/
+.page {
+  width: 100%;
+  scroll-behavior: smooth;
+}
+.header {
+  width: 100%;
+  opacity: 0.95;
+  position: fixed;
+  z-index: 10;
+}
+.headboard {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: var(--background-colordark);
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  /*border: black solid 4px;*/
+}
+.name {
+  font-family: var(--title);
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.25;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--title-nav-color);
+  margin: 0 var(--margin-container-mobile);
+}
+.navigation-menu {
+  width: 100%;
+}
+.list {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--background-colorlight);
+  width: 100%;
+  list-style-type: none;
+  padding: 8px 17px 7px 16px;
+  opacity: 0.9;
+  /*border: black solid 4px;*/
+  font-family: var(--title);
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+}
+.menu {
+  color: var(--title-nav-color);
+  text-decoration: none;
 }

@@ -1,0 +1,59 @@
+.container-strengths {
+  background-color: rgba(184, 184, 185, 0.2);
+  padding: 30px 0 45px 0;
+}
+
+.strengths {
+  width: auto;
+}
+
+.strengthstitle {
+  width: auto;
+  font-family: var(--title);
+  font-size: 22px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.05;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--background-colordark);
+}
+
+.weaknessestitle {
+  width: auto;
+  font-family: var(--title);
+  font-size: 22px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.05;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--background-colordark);
+  margin-top: 30px;
+}
+
+.strengthstext {
+  font-family: var(--text);
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--colordarkgrey);
+}
+
+.weaknessestext {
+  font-family: var(--text);
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--colordarkgrey);
+}

@@ -3,18 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
+      integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY="
+      crossorigin="anonymous"
+    />
     <!-- Links a Open Sans -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <!-- Links a Rubik -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body class="page">
-    <header class="header">
+    <include src="./partials/header.html"></include>
+
+    <!--     <header class="header">
       <div class="centralcolumn headboard">
         <h1 class="name">NÓMADAS DIGITALES</h1>
         <nav class="navigation-menu">
@@ -25,13 +38,18 @@
           </ul>
        </nav>
       </div>
-    </header>
-    <main class="main">
+    </header> -->
+
+    <include src="./partials/main.html"></include>
+    <!--     <main class="main"> -->
+
+    <!-- 
       <section class="hero">
         <img class="hero-image" src="./assets/images/fondo5blanco(1).jpg" alt="fondo"/>
         <div class="centralcolumn slogan">Del GIT al cielo</div>
-      </section>
-      <section id="team" class="aboutus">
+      </section> -->
+
+    <!--       <section id="team" class="aboutus">
         <div class="centralcolumn">
           <h2 class= "aboutustitle">EQUIPO</h2>
           <p class="aboutustext">
@@ -42,7 +60,9 @@
           </p>
         </div>  
       <div class="rectangle"></div> 
-      </section>
+      </section> -->
+
+    <!-- 
       <aside class="container-strengths">
         <div class="centralcolumn">
           <div class="strengths">
@@ -63,10 +83,11 @@
             </p>
           </div>
         </div>
-      </aside>
-    <section id="aboutus" class="section-adalabers">
-<!--       <div class="centralcolumn"> -->
-      <h2 class="centralcolumn who-weare">QUIÉNES SOMOS</h2>
+      </aside> -->
+
+    <!--     <section id="aboutus" class="section-adalabers"> -->
+    <!--       <div class="centralcolumn"> -->
+    <!--      <h2 class="centralcolumn who-weare">QUIÉNES SOMOS</h2>
       <div class="centralcolumn adalabers adal-Cristina">
         <img
           class="photo"
@@ -158,11 +179,17 @@
             </ul>
           </nav>
         </div>
-      </div>
-<!--     </div> -->
-    </section>
-  </main>
-    <footer class="footer">
+      </div> -->
+    <!--     </div> -->
+    <!--     </section>
+
+
+
+  </main> -->
+
+    <include src="./partials/footer.html"></include>
+
+    <!--     <footer class="footer">
       <div class="centralcolumn footer-container">
       <div class="footer-copyright">
         <p>Nómadas Digitales © 2020</p>
@@ -183,8 +210,6 @@
       <a class="logo-container" title="Adalab-web" href="https://adalab.es" target="_blank"><img class="footer-logo" src="./assets/images/logo-adalab.png" alt="adalab logo" />
       </a>
       </div>  
-    </footer>
+    </footer> -->
   </body>
 </html>
-
-

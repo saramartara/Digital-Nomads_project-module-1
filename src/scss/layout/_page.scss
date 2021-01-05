@@ -1,7 +1,20 @@
-body {
-  padding: 2rem;
-  height: 100vh;
-  background-image: url('../images/bg-adalab.png');
-  background-color: $color-bg;
-  font-family: $font-main;
+.centralcolumn {
+  margin: 0 $margin-container-mobile;
+}
+
+@media all and (min-width: 768px) {
+  /*:root {
+      --margin-container: 45px;
+    }*/
+  .centralcolumn {
+    margin: 0 $margin-container-tablet;
+  }
+}
+@media all and (min-width: 1200px) {
+  /*:root {
+        --margin-container: 138px;
+      }*/
+  .centralcolumn {
+    margin: 0 $margin-container-desktop;
+  }
 }
