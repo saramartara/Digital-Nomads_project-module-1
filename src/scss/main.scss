@@ -381,42 +381,42 @@
   } */
   /*header - hero*/
 
-  .headboard {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    height: 60px;
-    margin: 0px;
-  }
-  .name {
-    width: 50%;
-    text-align: start;
-    margin-left: var(--margin-container-tablet);
-  }
-  .list {
-    background-color: var(--background-colordark);
-    position: relative;
-    justify-content: flex-end;
-    padding: 16px 0px 14px;
-  }
-  .menu2 {
-    padding: 0 18px 0 19px;
-  }
-  .menu3 {
-    padding-right: var(--margin-container-tablet);
-  }
-  .hero {
-    padding-top: 60px;
-  }
-  .slogan {
-    opacity: 0.8;
-    padding: 15px 30px;
-    position: absolute;
-    bottom: 0%;
-    left: 0%;
-    transform: none;
-  }
+  // .headboard {
+  //   display: flex;
+  //   flex-direction: row;
+  //   flex-wrap: nowrap;
+  //   align-items: center;
+  //   height: 60px;
+  //   margin: 0px;
+  // }
+  // .name {
+  //   width: 50%;
+  //   text-align: start;
+  //   margin-left: var(--margin-container-tablet);
+  // }
+  // .list {
+  //   background-color: var(--background-colordark);
+  //   position: relative;
+  //   justify-content: flex-end;
+  //   padding: 16px 0px 14px;
+  // }
+  // .who {
+  //   padding: 0 18px 0 19px;
+  // }
+  // .contact {
+  //   padding-right: var(--margin-container-tablet);
+  // }
+  // .hero {
+  //   padding-top: 60px;
+  // }
+  // .slogan {
+  //   opacity: 0.8;
+  //   padding: 15px 30px;
+  //   position: absolute;
+  //   bottom: 0%;
+  //   left: 0%;
+  //   transform: none;
+  // }
 
   .container-strengths .centralcolumn {
     display: flex;
@@ -539,18 +539,18 @@
     margin: 0 var(--margin-container-desktop);
   } */
   /*header - hero*/
-  .headboard {
-    margin: 0px;
-  }
-  .name {
-    margin-left: var(--margin-container-desktop);
-  }
-  .menu3 {
-    padding-right: var(--margin-container-desktop);
-  }
-  .slogan {
-    margin-left: var(--margin-container-desktop);
-  }
+  // .headboard {
+  //   margin: 0px;
+  // }
+  // .name {
+  //   margin-left: var(--margin-container-desktop);
+  // }
+  // .contact {
+  //   padding-right: var(--margin-container-desktop);
+  // }
+  // .slogan {
+  //   margin-left: var(--margin-container-desktop);
+  // }
   .aboutustext1 {
     padding: 0 162px;
   }

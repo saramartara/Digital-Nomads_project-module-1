@@ -4,23 +4,37 @@
   align-items: center;
   position: relative;
   padding-top: 90px;
-  margin-bottom: var(--margin-container-mobile);
-}
-
-.hero-image {
-  width: 100%;
-}
-.slogan {
-  background-color: var(--title-nav-color);
-  font-family: var(--text);
-  font-size: 18px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.39;
-  letter-spacing: normal;
-  padding: 7px 15px 8px;
-  position: absolute;
-  bottom: 0%;
-  transform: translateY(50%);
+  margin-bottom: 45px;
+  &__image {
+    width: 100%;
+  }
+  &__slogan {
+    background-color: $color-slogan;
+    font-family: $text;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.39;
+    letter-spacing: normal;
+    padding: 7px 15px 8px;
+    position: absolute;
+    bottom: 0%;
+    transform: translateY(50%);
+    @media all and (min-width: 768px) {
+      opacity: 0.8;
+      padding: 15px 30px;
+      position: absolute;
+      bottom: 0%;
+      left: 0%;
+      transform: none;
+      margin-left: $margin-container-tablet;
+    }
+    @media all and (min-width: 1200px) {
+      margin-left: $margin-container-desktop;
+    }
+  }
+  @media all and (min-width: 768px) {
+    padding-top: 60px;
+  }
 }
