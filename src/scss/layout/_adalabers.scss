@@ -1,11 +1,50 @@
 /* SECTION ADALABERS. STYLES */
-.section-adalabers {
+.adalabers {
   width: 100%;
   /*   text-align: center; */
+  &__card {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__photo {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    border-radius: 4px;
+    border: solid 5px rgba(0, 0, 0, 0.08);
+  }
+  &__info {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  &__paragraph {
+    width: 100%;
+    font-family: $text;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: $color-strenghts-text;
+  }
+  &__links {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    width: 124px;
+    color: $color-strenghts-text;
+  }
 }
 
 .who-weare {
-  font-family: var(--title);
+  font-family: $title;
   font-size: 24px;
   font-weight: 500;
   margin: 30px 0;
@@ -14,35 +53,35 @@
   line-height: 1.88;
   letter-spacing: normal;
   text-align: center;
-  color: var(--background-colordark);
+  color: $color-header-dark;
 }
 
-.adalabers {
+/* .adalabers__card {
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} */
 
-.adalabers-info {
+/* .adalabers__info {
   width: 100%;
   margin-top: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
+} */
 
-.photo {
+/* .card__photo {
   width: 180px;
   height: 180px;
   margin: 0 auto;
   border-radius: 4px;
   border: solid 5px rgba(0, 0, 0, 0.08);
-}
+} */
 
 .whoweare-name {
-  font-family: var(--text);
+  font-family: $text;
   font-size: 20px;
   font-weight: normal;
   font-stretch: normal;
@@ -53,7 +92,7 @@
   color: black;
   /*     margin-top: 15px; */
 }
-.paragraph {
+/* .adalabers__paragraph {
   width: 100%;
   font-family: var(--text);
   font-size: 16px;
@@ -62,20 +101,18 @@
   font-style: normal;
   line-height: 1.5;
   letter-spacing: normal;
-  /*   margin: 0 0 15px 0; */
-  /*   text-align: center; */
   color: var(--colordarkgrey);
-}
+} */
 
-.links-contact {
+/* .adalabers__links {
   display: flex;
   justify-content: center;
   margin-top: 15px;
   width: 124px;
   color: var(--colordarkgrey);
-}
+} */
 
 .fa {
-  color: var(--background-colordark);
+  color: $color-header-dark;
   font-size: 16px;
 }
