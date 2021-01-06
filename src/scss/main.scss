@@ -418,26 +418,26 @@
     transform: none;
   }
 
-  .container-strengths .centralcolumn {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 30px 0 45px 0;
-  }
-  .strengths {
-    width: 50%;
-    box-sizing: border-box;
-    padding-right: 22.5px;
-  }
-  .weaknesses {
-    width: 50%;
-    box-sizing: border-box;
-    padding-left: 22.5px;
-  }
-  .weaknessestitle {
-    margin-top: 0;
-  }
+  // .container-strengths .centralcolumn {
+  //   display: flex;
+  //   flex-direction: row;
+  //   flex-wrap: wrap;
+  //   justify-content: center;
+  //   padding: 30px 0 45px 0;
+  // }
+  // .strengths {
+  //   width: 50%;
+  //   box-sizing: border-box;
+  //   padding-right: 22.5px;
+  // }
+  // .weaknesses {
+  //   width: 50%;
+  //   box-sizing: border-box;
+  //   padding-left: 22.5px;
+  // }
+  // .weaknessestitle {
+  //   margin-top: 0;
+  // }
 
   /* Adalabers section */
 
@@ -550,9 +550,6 @@
   }
   .slogan {
     margin-left: var(--margin-container-desktop);
-  }
-  .aboutustext1 {
-    padding: 0 162px;
   }
 
   /* Adalabers section */
