@@ -1,3 +1,25 @@
+@mixin font() {
+  font-family: $title;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.25;
+  letter-spacing: normal;
+  @content;
+}
+
+@mixin tablet() {
+  @media all and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  @media all and (min-width: 1200px) {
+    @content;
+  }
+}
 .hero {
   display: flex;
   flex-direction: column;
@@ -10,18 +32,17 @@
   }
   &__slogan {
     background-color: $color-slogan;
-    font-family: $text;
-    font-size: 18px;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.39;
-    letter-spacing: normal;
+    @include font() {
+      font-family: $text;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.39;
+    }
     padding: 7px 15px 8px;
     position: absolute;
     bottom: 0%;
     transform: translateY(50%);
-    @media all and (min-width: 768px) {
+    @include tablet() {
       opacity: 0.8;
       padding: 15px 30px;
       position: absolute;
@@ -30,11 +51,11 @@
       transform: none;
       margin-left: $margin-container-tablet;
     }
-    @media all and (min-width: 1200px) {
+    @include desktop() {
       margin-left: $margin-container-desktop;
     }
   }
-  @media all and (min-width: 768px) {
+  @include tablet() {
     padding-top: 60px;
   }
 }
