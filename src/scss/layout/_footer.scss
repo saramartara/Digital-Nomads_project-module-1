@@ -46,7 +46,7 @@
 
 .footer-menu {
   @include footer(){
-    padding: 10px;
+    padding: 30px;
   }
 }
   
@@ -74,7 +74,7 @@
     padding: 5px;
     }
 
-  
+
 .footer-logo__image {
   @include footer(){
   width: 116px;
