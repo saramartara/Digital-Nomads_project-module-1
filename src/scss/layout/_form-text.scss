@@ -1,3 +1,15 @@
+@mixin tablet() {
+  @media all and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  @media all and (min-width: 1200px) {
+    @content;
+  }
+}
+
 .contact {
   width: 100%;
   display: flex;
@@ -29,6 +41,13 @@
     letter-spacing: normal;
     text-align: center;
     color: $color-text;
+
+    @include tablet() {
+      width: 442px;
+    }
+    @include desktop() {
+      width: 601px;
+    }
   }
   &__required {
     width: 290px;
