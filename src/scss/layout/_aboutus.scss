@@ -9,7 +9,9 @@
   font-style: normal;
   letter-spacing: normal;
 }
-
+#team {
+  scroll-margin-top: 60px;
+}
 .aboutus {
   box-sizing: border-box;
   display: flex;
@@ -24,7 +26,7 @@
     font-weight: 500;
     @include normalTitleText;
     line-height: 1.88;
-    color: $color-header-light;
+    color: $color-aboutus-title;
     padding-top: 45px;
   }
 
@@ -34,14 +36,14 @@
     font-weight: normal;
     @include normalTitleText;
     line-height: 1.5;
-    color: $color-strenghts-text;
+    color: $color-text;
     padding: 15px 0 30px 0;
     @include desktop() {
       padding: 0 162px 60px 162px;
     }
   }
   &__rhombus {
-    background: $color-nav-title;
+    background: $color-basic;
     width: 30px;
     height: 30px;
     position: absolute;
@@ -49,39 +51,3 @@
     transform: translateY(50%) rotate(45deg);
   }
 }
-
-// .aboutus__title {
-//   font-family: $title;
-//   font-size: 24px;
-//   font-weight: 500;
-//   font-stretch: normal;
-//   font-style: normal;
-//   line-height: 1.88;
-//   letter-spacing: normal;
-//   color: $color-header-light;
-//   padding-top: 45px;
-// }
-
-// .aboutus__text {
-//   font-family: $text;
-//   font-size: 16px;
-//   font-weight: normal;
-//   font-stretch: normal;
-//   font-style: normal;
-//   line-height: 1.5;
-//   letter-spacing: normal;
-//   color: $color-strenghts-text;
-//   padding: 15px 0 30px 0;
-//   @media all and (min-width: 1200px) {
-//     padding: 0 162px 60px 162px;
-//   }
-// }
-
-// .aboutus__rhombus {
-//   background: $color-nav-title;
-//   width: 30px;
-//   height: 30px;
-//   position: absolute;
-//   bottom: 0%;
-//   transform: translateY(50%) rotate(45deg);
-// }

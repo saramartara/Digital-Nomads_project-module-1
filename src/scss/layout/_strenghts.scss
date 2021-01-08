@@ -23,7 +23,7 @@
   font-weight: 500;
   line-height: 2.05;
   text-align: center;
-  color: $color-header-dark;
+  color: $color-strenghts-title;
   @include normalTitleText();
   @content;
 }
@@ -34,7 +34,7 @@
   font-weight: normal;
   line-height: 1.5;
   text-align: center;
-  color: $color-strenghts-text;
+  color: $color-text;
   @include normalTitleText();
   @content;
 }

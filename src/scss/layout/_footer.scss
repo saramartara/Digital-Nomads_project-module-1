@@ -1,22 +1,19 @@
-
-@mixin footer (){
+@mixin footer() {
   margin: auto;
-  display:flex;
+  display: flex;
   @content;
 }
 
-@mixin footer-alignment(){
-  flex-direction: column ;
+@mixin footer-alignment() {
+  flex-direction: column;
   text-align: center;
   @content;
 }
 
-
-
 .footer {
-  background-color: $color-nav-title;
+  background-color: $color-basic;
   border-top: solid 1px;
-  border-color: $color-textfooter ;
+  border-color: $color-text-footer;
   margin: 0;
   width: 100%;
 }
@@ -28,30 +25,30 @@
   justify-content: center;
   margin-top: 30px;
   margin-bottom: 45px;
-  
+
   .footer-copyright {
-  width: auto;
-  font-family: $text;
-  font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.43;
-  letter-spacing: normal;
-  color: $color-textfooter;
-  display: inline;
-  text-align: center;
-}
+    width: auto;
+    font-family: $text;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: $color-text-footer;
+    display: inline;
+    text-align: center;
+  }
 }
 
 .footer-menu {
-  @include footer(){
+  @include footer() {
     padding: 30px;
   }
 }
-  
-  .footer-menu__list {
-  @include footer(){
+
+.footer-menu__list {
+  @include footer() {
     width: 100%;
     opacity: 0.75;
     font-family: "Opensans";
@@ -61,33 +58,29 @@
     font-style: normal;
     line-height: 1.43;
     letter-spacing: normal;
-    color: $color-strenghts-text;
+    color: $color-text;
     justify-content: space-around;
-    }
-  @include footer-alignment(){
-    }
-  } 
-  
-  .footer-menu__link {
-    text-decoration: none;
-    color:$color-strenghts-text;
-    padding: 5px;
-    }
-
-
-.footer-logo__image {
-  @include footer(){
-  width: 116px;
-  height: 45px;
-  align-items: center;
-  justify-content: space-around;
+  }
+  @include footer-alignment() {
   }
 }
 
+.footer-menu__link {
+  text-decoration: none;
+  color: $color-text;
+  padding: 5px;
+}
 
+.footer-logo__image {
+  @include footer() {
+    width: 116px;
+    height: 45px;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
 
-@media all and (min-width: 768px){
-
+@media all and (min-width: 768px) {
   .footer-container {
     flex-direction: row;
     flex-wrap: wrap;
@@ -121,10 +114,9 @@
     position: absolute;
     transform: translate(0, 80%);
   }
-
 }
-@media all and (min-width: 1200px){
-    .footer-container {
+@media all and (min-width: 1200px) {
+  .footer-container {
     margin-top: 24px;
     margin-bottom: 47px;
   }

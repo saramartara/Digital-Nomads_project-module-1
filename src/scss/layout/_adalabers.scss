@@ -11,6 +11,9 @@
 }
 
 /* SECTION ADALABERS. STYLES */
+#adalabers {
+  scroll-margin-top: 60px;
+}
 .adalabers {
   width: 100%;
   /*   text-align: center; */
@@ -24,7 +27,7 @@
     line-height: 1.88;
     letter-spacing: normal;
     text-align: center;
-    color: $color-header-dark;
+    color: $color-adalabers-title;
 
     @include tablet() {
       margin: 45px 0 41px 0;
@@ -118,7 +121,7 @@
     font-style: normal;
     line-height: 1.5;
     letter-spacing: normal;
-    color: $color-strenghts-text;
+    color: $color-text;
     @include desktop() {
       width: 440px;
     }
@@ -128,7 +131,7 @@
     justify-content: center;
     margin-top: 15px;
     width: 124px;
-    color: $color-strenghts-text;
+    color: $color-text;
     @include tablet() {
       &--Cristina,
       &--Amanda {
@@ -143,6 +146,6 @@
   }
 }
 .fa {
-  color: $color-header-dark;
+  color: $color-symbols;
   font-size: 16px;
 }
