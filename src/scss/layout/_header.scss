@@ -11,6 +11,7 @@
   font-style: normal;
   line-height: 2.25;
   letter-spacing: normal;
+  text-transform: uppercase;
   @content;
 }
 
@@ -25,7 +26,6 @@
     @content;
   }
 }
-
 .header {
   width: 100%;
   opacity: 0.95;
@@ -42,25 +42,6 @@
   justify-content: center;
   align-items: center;
   margin: 0px;
-  &__name {
-    @include font() {
-    }
-    text-align: center;
-    color: $color-nav-title;
-    margin: 0 $margin-container-mobile;
-    @include tablet() {
-      width: 50%;
-      text-align: start;
-      margin-left: $margin-container-tablet;
-    }
-    @include desktop() {
-      margin-left: $margin-container-desktop;
-      padding-left: 4px;
-    }
-  }
-  &__nav {
-    width: 100%;
-  }
   @include tablet() {
     display: flex;
     flex-direction: row;
@@ -73,7 +54,24 @@
     margin: 0px;
   }
 }
+.name {
+  @include font() {
+  }
+  text-align: center;
+  color: $color-nav-title;
+  margin: 0 $margin-container-mobile;
+  @include tablet() {
+    width: 50%;
+    text-align: start;
+    margin-left: $margin-container-tablet;
+  }
+  @include desktop() {
+    margin-left: $margin-container-desktop;
+    padding-left: 4px;
+  }
+}
 .nav {
+  width: 100%;
   &__list {
     @include font() {
       font-size: 15px;
