@@ -2,16 +2,16 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import "./core/reset.scss";
-@import "./core/variables.scss";
-@import "./layout/header.scss";
-@import "./layout/page.scss";
-@import "./layout/hero.scss";
-@import "./layout/aboutus.scss";
-@import "./layout/strenghts.scss";
-@import "./layout/adalabers.scss";
-@import "./layout/footer.scss";
-@import "./pages/index.scss";
+@import "./core/reset";
+@import "./core/variables";
+@import "./layout/header";
+@import "./layout/page";
+@import "./layout/hero";
+@import "./layout/aboutus";
+@import "./layout/strenghts";
+@import "./layout/adalabers";
+@import "./layout/footer";
+@import "./pages/index";
 /* 
 :root {
   Colores
@@ -372,16 +372,16 @@
   justify-content: space-around;
 } */
 
-@media all and (min-width: 768px) {
-  /*:root {
+/* @media all and (min-width: 768px) { */
+/*:root {
       --margin-container: 45px;
     }*/
-  /*   .centralcolumn {
+/*   .centralcolumn {
     margin: 0 var(--margin-container-tablet);
   } */
-  /*header - hero*/
+/*header - hero*/
 
-  .headboard {
+/*   .headboard {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -439,9 +439,9 @@
   //   margin-top: 0;
   // }
 
-  /* Adalabers section */
+/* Adalabers section */
 
-  .who-weare {
+/*   .who-weare {
     margin: 45px 0 41px 0;
   }
   .adalabers {
@@ -450,11 +450,10 @@
   }
 
   .adalabers-info {
-    /*     min-height: 100%; */
     margin-top: 0;
-  }
+  } */
 
-  .adal-Cristina,
+/*   .adal-Cristina,
   .adal-Amanda {
     flex-direction: row;
   }
@@ -463,9 +462,9 @@
   .adal-Maria {
     flex-direction: row-reverse;
     text-align: right;
-  }
+  } */
 
-  .info-Cristina,
+/*   .info-Cristina,
   .info-Amanda {
     margin-left: 30px;
     justify-content: flex-start;
@@ -478,8 +477,8 @@
     margin-right: 30px;
     align-items: flex-end;
     text-align: right;
-  }
-
+  } */
+/* 
   .info-Cristina .links-contact,
   .info-Amanda .links-contact {
     justify-content: flex-start;
@@ -488,15 +487,16 @@
   .info-Maria .links-contact,
   .info-Sara .links-contact {
     justify-content: flex-end;
-  }
+  } */
 
-  .photo {
+/*   .photo {
     width: 205px;
     height: 205px;
-  }
-  /* Footer */
+  } */
 
-  .footer-container {
+/* Footer */
+
+/* .footer-container {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -514,8 +514,8 @@
     padding: 0;
     text-align: right;
     /*align-items: flex-end;*/
-  }
-  .footer-list {
+/* } */
+/*   .footer-list {
     height: 80px;
     align-items: flex-end;
     justify-content: space-between;
@@ -529,17 +529,17 @@
     position: absolute;
     transform: translate(0, 80%);
   }
-}
-
+} */
+/* 
 @media all and (min-width: 1200px) {
   /*:root {
       --margin-container: 138px;
     }*/
-  /*   .centralcolumn {
+/*   .centralcolumn {
     margin: 0 var(--margin-container-desktop);
   } */
-  /*header - hero*/
-  .headboard {
+/*header - hero*/
+/*   .headboard {
     margin: 0px;
   }
   .name {
@@ -551,10 +551,13 @@
   .slogan {
     margin-left: var(--margin-container-desktop);
   }
+  .aboutustext1 {
+    padding: 0 162px;
+  } */
 
-  /* Adalabers section */
+/* Adalabers section */
 
-  .who-weare {
+/*   .who-weare {
     margin: 45px 0 41px 0;
   }
 
@@ -568,12 +571,13 @@
   }
   .paragraph {
     width: 440px;
-  }
+  } */
 
-  /*Footer*/
+/*Footer*/
 
-  .footer-container {
+/*   .footer-container {
     margin-top: 24px;
     margin-bottom: 47px;
   }
 }
+ */
