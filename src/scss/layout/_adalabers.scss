@@ -1,81 +1,148 @@
+@mixin tablet() {
+  @media all and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  @media all and (min-width: 1200px) {
+    @content;
+  }
+}
+
 /* SECTION ADALABERS. STYLES */
-.section-adalabers {
-  width: 100%;
-  /*   text-align: center; */
-}
-
-.who-weare {
-  font-family: var(--title);
-  font-size: 24px;
-  font-weight: 500;
-  margin: 30px 0;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.88;
-  letter-spacing: normal;
-  text-align: center;
-  color: var(--background-colordark);
-}
-
 .adalabers {
-  margin-bottom: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.adalabers-info {
   width: 100%;
-  margin-top: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.photo {
-  width: 180px;
-  height: 180px;
-  margin: 0 auto;
-  border-radius: 4px;
-  border: solid 5px rgba(0, 0, 0, 0.08);
-}
-
-.whoweare-name {
-  font-family: var(--text);
-  font-size: 20px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.25;
-  letter-spacing: normal;
   /*   text-align: center; */
-  color: black;
-  /*     margin-top: 15px; */
-}
-.paragraph {
-  width: 100%;
-  font-family: var(--text);
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  /*   margin: 0 0 15px 0; */
-  /*   text-align: center; */
-  color: var(--colordarkgrey);
-}
+  &__title {
+    font-family: $title;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 30px 0;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: center;
+    color: $color-header-dark;
 
-.links-contact {
-  display: flex;
-  justify-content: center;
-  margin-top: 15px;
-  width: 124px;
-  color: var(--colordarkgrey);
-}
+    @include tablet() {
+      margin: 45px 0 41px 0;
+    }
 
+    @include desktop() {
+      margin: 45px 0 41px 0;
+    }
+  }
+  &__card {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include tablet() {
+      margin-bottom: 60px;
+      align-items: flex-start;
+
+      &:nth-child(even) {
+        flex-direction: row;
+      }
+      &:nth-child(odd) {
+        flex-direction: row-reverse;
+        text-align: right;
+      }
+    }
+
+    @include desktop() {
+      margin-bottom: 60px;
+    }
+  }
+  &__photo {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    border-radius: 4px;
+    border: solid 5px rgba(0, 0, 0, 0.08);
+    @include tablet() {
+      width: 205px;
+      height: 205px;
+    }
+    @include desktop() {
+      width: 278px;
+      height: 278px;
+    }
+  }
+  &__name {
+    font-family: $text;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.25;
+    letter-spacing: normal;
+    color: black;
+  }
+  &__info {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    @include tablet() {
+      margin-top: 0;
+
+      &--Cristina,
+      &--Amanda {
+        margin-left: 30px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+      }
+
+      &--Maria,
+      &--Sara {
+        margin-right: 30px;
+        align-items: flex-end;
+        text-align: right;
+      }
+    }
+  }
+  &__paragraph {
+    width: 100%;
+    font-family: $text;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: $color-strenghts-text;
+    @include desktop() {
+      width: 440px;
+    }
+  }
+  &__links {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    width: 124px;
+    color: $color-strenghts-text;
+    @include tablet() {
+      &--Cristina,
+      &--Amanda {
+        justify-content: flex-start;
+      }
+
+      &--Maria,
+      &--Sara {
+        justify-content: flex-end;
+      }
+    }
+  }
+}
 .fa {
-  color: var(--background-colordark);
+  color: $color-header-dark;
   font-size: 16px;
 }
