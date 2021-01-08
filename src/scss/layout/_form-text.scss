@@ -1,0 +1,49 @@
+.contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    height: 45px;
+    margin: 30px 0 15px 0;
+    font-family: $title;
+    font-size: 24px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: center;
+    color: $color-adalabers-title;
+    text-transform: uppercase;
+  }
+  &__paragraph {
+    width: 290px;
+    margin: 15px 0 20px;
+    font-family: $text;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: $color-text;
+  }
+  &__required {
+    width: 290px;
+    margin-bottom: 58px;
+    font-family: $text;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: $color-text;
+    &--asterisk {
+      color: $color-asterisk;
+    }
+  }
+}
