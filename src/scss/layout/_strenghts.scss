@@ -1,59 +1,86 @@
-.container-strengths {
+@mixin tablet() {
+  @media all and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  @media all and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin normalTitleText() {
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+}
+
+@mixin overviewTitle() {
+  width: auto;
+  font-family: $title;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 2.05;
+  text-align: center;
+  color: $color-header-dark;
+  @include normalTitleText();
+  @content;
+}
+
+@mixin overviewText() {
+  font-family: $text;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  text-align: center;
+  color: $color-strenghts-text;
+  @include normalTitleText();
+  @content;
+}
+
+.overview {
   background-color: rgba(184, 184, 185, 0.2);
   padding: 30px 0 45px 0;
-}
+  & .centralcolumn {
+    @include tablet() {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 30px 0 45px 0;
+    }
+  }
 
-.strengths {
-  width: auto;
-}
+  &__strenghts {
+    @include tablet() {
+      width: 50%;
+      box-sizing: border-box;
+      padding-right: 22.5px;
+    }
+    &--title {
+      @include overviewTitle;
+    }
+    &--text {
+      @include overviewText;
+    }
+  }
 
-.strengthstitle {
-  width: auto;
-  font-family: var(--title);
-  font-size: 22px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.05;
-  letter-spacing: normal;
-  text-align: center;
-  color: var(--background-colordark);
-}
-
-.weaknessestitle {
-  width: auto;
-  font-family: var(--title);
-  font-size: 22px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.05;
-  letter-spacing: normal;
-  text-align: center;
-  color: var(--background-colordark);
-  margin-top: 30px;
-}
-
-.strengthstext {
-  font-family: var(--text);
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  text-align: center;
-  color: var(--colordarkgrey);
-}
-
-.weaknessestext {
-  font-family: var(--text);
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  text-align: center;
-  color: var(--colordarkgrey);
+  &__weaknesses {
+    @include tablet() {
+      width: 50%;
+      box-sizing: border-box;
+      padding-left: 22.5px;
+    }
+    &--title {
+      @include overviewTitle;
+      margin-top: 30px;
+      @include tablet() {
+        margin-top: 0;
+      }
+    }
+    &--text {
+      @include overviewText;
+    }
+  }
 }
