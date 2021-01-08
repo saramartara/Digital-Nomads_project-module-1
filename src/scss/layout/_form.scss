@@ -1,0 +1,17 @@
+.form {
+  //   display: grid;
+  //   grid-template-columns: 1fr;
+  //   grid-template-rows: repeat(5, 1fr);
+  width: 100%;
+  &__input {
+    height: 45px;
+    margin: 7px 0 13px 0;
+    border: solid 1px $color-text-footer;
+    padding: 7px 209px 15px 15px;
+  }
+}
+.containers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
