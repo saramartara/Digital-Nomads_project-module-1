@@ -20,7 +20,8 @@
   //   display: grid;
   //   grid-template-columns: 1fr;
   //   grid-template-rows: repeat(5, 1fr);
-  @include overviewText() @include tablet() {
+  @include overviewText();
+  @include tablet() {
     padding: 0 118px;
   }
   @include desktop() {
