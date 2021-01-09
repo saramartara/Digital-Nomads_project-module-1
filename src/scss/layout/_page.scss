@@ -6,8 +6,11 @@
   margin: 0 $margin-container-mobile;
   @media all and (min-width: 768px) {
     margin: 0 $margin-container-tablet;
+    
+
   }
   @media all and (min-width: 1200px) {
     margin: 0 $margin-container-desktop;
+  
   }
 }
