@@ -1,4 +1,3 @@
-
 @mixin normalTitleText() {
   font-stretch: normal;
   font-style: normal;
@@ -14,7 +13,6 @@
   @content;
 }
 
-
 .section_form {
   width: 100%;
 }
@@ -22,60 +20,49 @@
   //   display: grid;
   //   grid-template-columns: 1fr;
   //   grid-template-rows: repeat(5, 1fr);
-  @include overviewText()
-  @include tablet(){
+  @include overviewText() @include tablet() {
     padding: 0 118px;
-  } 
-  @include desktop(){
+  }
+  @include desktop() {
     padding: 0 161px;
   }
   &__input {
-    @include overviewText() 
-    box-sizing: border-box;
+    @include overviewText() box-sizing: border-box;
     width: 100%;
     height: 45px;
     margin: 7px 0 13px 0;
     border: solid 1px $color-text-footer;
     padding: 7px 15px 15px 15px;
-  &--email{
-    font-size: 16px;
-    color: $color-text;
+    &--email {
+      font-size: 16px;
+      color: $color-text;
+    }
   }
-
-  }
-  
 }
 .containers {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
 }
 
-.container-emailtelephone{
-  @include desktop(){
+.containers-emailtelephone {
+  @include desktop() {
     display: flex;
     flex-wrap: nowrap;
-    flex-direction: row;
-    
   }
 }
 
-.form__email{
-  @include desktop(){
+.form__email {
+  @include desktop() {
     margin-right: 44px;
-    width: 40%;
-    // flex-grow: 2;
+    flex-grow: 2;
   }
 }
 
-.form__telephone{
-  @include desktop(){
-    width: 20%;
-    // flex-grow: 1;
+.form__telephone {
+  @include desktop() {
+    flex-grow: 1;
   }
-
-
 }
 .message_area {
   height: 105px;
@@ -84,12 +71,11 @@
   box-sizing: border-box;
   border: solid 1px $color-text-footer;
   width: 100%;
-  @include overviewText() 
-
+  @include overviewText();
 }
 .container-button {
-  @include tablet(){
-    display:flex;
+  @include tablet() {
+    display: flex;
     justify-content: flex-end;
   }
 }
@@ -103,19 +89,15 @@
   border-style: none;
 
   @include overviewText() {
-    text-transform:uppercase;
+    text-transform: uppercase;
     color: $color-basic;
     font-size: 16px;
     font-weight: 600;
-
-
   }
-  @include tablet(){
+  @include tablet() {
     width: 206px;
-    
-    
   }
-  @include desktop(){
+  @include desktop() {
     width: 278px;
   }
 }
