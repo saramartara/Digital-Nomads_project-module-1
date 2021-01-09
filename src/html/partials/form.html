@@ -5,7 +5,9 @@
     method="POST"
   >
     <div class="containers form__name">
-      <label for="name_form">Nombre completo <spam>*</spam></label>
+      <label for="name_form"
+        >Nombre completo <span class="asterisk">*</span></label
+      >
       <input
         class="form__input"
         id="name"
@@ -16,7 +18,7 @@
       />
     </div>
     <div class="containers form__email">
-      <label for="emai_form">Email *</label>
+      <label for="emai_form">Email <span class="asterisk">*</span></label>
       <input
         class="form__input"
         id="email"
@@ -37,7 +39,7 @@
       />
     </div>
     <div class="containers form__message">
-      <label for="message">Mensaje *</label>
+      <label for="message">Mensaje <span class="asterisk">*</span></label>
       <textarea
         class="message_area"
         id="message"
@@ -47,6 +49,6 @@
         required
       ></textarea>
     </div>
-      <input class="button" type="submit" value="Enviar" />
+    <input class="button" type="submit" value="Enviar" />
   </form>
 </section>

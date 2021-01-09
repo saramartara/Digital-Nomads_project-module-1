@@ -9,6 +9,13 @@
     @content;
   }
 }
+#contact_text {
+  scroll-margin-top: 60px;
+}
+
+.asterisk {
+  color: $color-asterisk;
+}
 
 .contact {
   width: 100%;
@@ -61,8 +68,5 @@
     letter-spacing: normal;
     text-align: center;
     color: $color-text;
-    &--asterisk {
-      color: $color-asterisk;
-    }
   }
 }
