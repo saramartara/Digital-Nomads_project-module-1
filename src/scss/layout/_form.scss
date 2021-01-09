@@ -28,7 +28,8 @@
     padding: 0 161px;
   }
   &__input {
-    @include overviewText() box-sizing: border-box;
+    @include overviewText();
+    box-sizing: border-box;
     width: 100%;
     height: 45px;
     margin: 7px 0 13px 0;
