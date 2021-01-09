@@ -1,3 +1,20 @@
+
+@mixin normalTitleText() {
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+}
+@mixin overviewText() {
+  font-family: $text;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: normal;
+  color: $color-text;
+  @include normalTitleText();
+  @content;
+}
+
+
 .section_form {
   width: 100%;
 }
@@ -5,19 +22,25 @@
   //   display: grid;
   //   grid-template-columns: 1fr;
   //   grid-template-rows: repeat(5, 1fr);
+  @include overviewText() 
   &__input {
+    @include overviewText() 
     box-sizing: border-box;
     width: 100%;
     height: 45px;
     margin: 7px 0 13px 0;
     border: solid 1px $color-text-footer;
-    padding: 7px 209px 15px 15px;
+    padding: 7px 15px 15px 15px;
+  &--email{
+    font-size: 16px;
+    color: $color-text;
+  }
   }
 }
 .containers {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .message_area {
@@ -27,12 +50,25 @@
   box-sizing: border-box;
   border: solid 1px $color-text-footer;
   width: 100%;
+  @include overviewText() 
+
 }
 .button {
   width: 100%;
   height: 45px;
   margin-bottom: 60px;
-  padding: 11px 158px 12px 74px;
+  padding: 11px 74px 12px 74px;
   border-radius: 4px;
   background-color: $color-adalabers-title;
+  border-style: none;
+
+  @include overviewText() {
+    text-transform:uppercase;
+    color: $color-basic;
+    font-size: 16px;
+    font-weight: 600;
+
+
+  }
+
 }
