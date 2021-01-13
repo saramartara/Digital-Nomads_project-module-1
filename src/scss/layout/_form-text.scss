@@ -9,6 +9,13 @@
     @content;
   }
 }
+#contact_text {
+  scroll-margin-top: 60px;
+}
+
+.asterisk {
+  color: $color-asterisk;
+}
 
 .contact {
   width: 100%;
@@ -30,8 +37,9 @@
     text-transform: uppercase;
   }
   &__paragraph {
-    width: 290px;
-    margin: 15px 0 20px;
+    /*     width: 290px; */
+    margin-top: 15px;
+    margin-bottom: 20px;
     font-family: $text;
     font-size: 16px;
     font-weight: normal;
@@ -41,16 +49,15 @@
     letter-spacing: normal;
     text-align: center;
     color: $color-text;
-
     @include tablet() {
-      width: 442px;
+      padding: 0 118px;
     }
     @include desktop() {
-      width: 601px;
+      padding: 0 161px;
     }
   }
   &__required {
-    width: 290px;
+    /*     width: 290px; */
     margin-bottom: 58px;
     font-family: $text;
     font-size: 12px;
@@ -61,8 +68,5 @@
     letter-spacing: normal;
     text-align: center;
     color: $color-text;
-    &--asterisk {
-      color: $color-asterisk;
-    }
   }
 }

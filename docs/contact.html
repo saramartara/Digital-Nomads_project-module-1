@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
+      integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY="
+      crossorigin="anonymous"
+    />
+    <!-- Links a Open Sans -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Links a Rubik -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/contact.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="headboard">
+        <h1 class="name">Nómadas digitales</h1>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li>
+              <a class="nav__list--menu nav__list--team" href="index.html#team">Equipo</a>
+            </li>
+            <li>
+              <a class="nav__list--menu nav__list--who" href="index.html#adalabers"
+                >Quienes somos</a
+              >
+            </li>
+            <li>
+              <a
+                class="nav__list--menu nav__list--contact"
+                href="#contact_text"
+                target=""
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+    <section class="hero">
+      <img
+        class="hero__image"
+        src="./assets/images/fondo-cuestionario.jpg"
+        alt="fondo"
+      />
+    </section>
+    <section id="contact_text" class="contact">
+      <h3 class="centralcolumn contact__title">Contacto</h3>
+      <p class="centralcolumn contact__paragraph">
+        En Nómadas Digitales estamos encantadas de proporcionarte la información que
+        necesitas. Si quieres conocernos mejor o hacernos cualquier pregunta,
+        rellena el siguiente formulario y nos pondremos en contacto contigo lo antes
+        posible. Gracias.
+      </p>
+      <small class="centralcolumn contact__required"
+        >Todos los campos marcados con <span class="asterisk">*</span> son
+        obligatorios</small
+      >
+    </section>
+
+    <section class="section_form">
+      <form
+        class="centralcolumn form"
+        action="https://formspree.io/f/xbjpqyoa"
+        method="POST"
+      >
+        <div class="containers form__name">
+          <label for="name_form"
+            >Nombre completo <span class="asterisk">*</span></label
+          >
+          <input
+            class="form__input"
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Nombre..."
+            required
+          />
+        </div>
+        <div class="containers-emailtelephone">
+        <div class="containers form__email">
+          <label for="emai_form">Email <span class="asterisk">*</span></label>
+          <input
+            class="form__input form__input--email"
+            id="email"
+            type="email"
+            name="email"
+            placeholder="nombre.apellidos@email.com"
+            required
+          />
+        </div>
+        <div class="containers form__telephone">
+          <label for="telephone">Teléfono</label>
+          <input
+            class="form__input"
+            id="telephone"
+            type="tel"
+            name="tel"
+            placeholder="Ej: 123456789"
+          />
+        </div>
+      </div>
+        <div class="containers form__message">
+          <label for="message">Mensaje <span class="asterisk">*</span></label>
+          <textarea
+            class="message_area"
+            id="message"
+            name="message"
+            placeholder="¿Qué necesitas?"
+            rows="6"
+            required
+          ></textarea>
+        </div>
+        <div class="container-button">
+        <input class="button" type="submit" value="Enviar" />
+        </div>
+      </form>
+    </section>
+
+
+    <footer class="footer">
+      <div class="centralcolumn footer-container">
+        <div class="footer-copyright">
+          <p>Nómadas Digitales © 2020</p>
+        </div>
+        <nav class="footer-menu">
+          <ul class="footer-menu__list">
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="index.html#team">EQUIPO</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="index.html#adalabers">QUIÉNES SOMOS</a>
+            </li>
+            <li class="footer-menu__item">
+              <a
+                class="footer-menu__link"
+                href="#contact_text"
+                target=""
+                >CONTACTO</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <a
+          class="footer-logo__container"
+          title="Adalab-web"
+          href="https://adalab.es"
+          target="_blank"
+          ><img
+            class="footer-logo__image"
+            src="./assets/images/logo-adalab-cortado.png"
+            alt="adalab logo"
+          />
+        </a>
+      </div>
+    </footer>
+
+  </body>
+</html>
