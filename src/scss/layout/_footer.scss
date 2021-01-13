@@ -51,7 +51,7 @@
   @include footer() {
     width: 100%;
     opacity: 0.75;
-    font-family: "Opensans";
+    font-family: $text;
     font-size: 14px;
     font-weight: 600;
     font-stretch: normal;
@@ -59,6 +59,7 @@
     line-height: 1.43;
     letter-spacing: normal;
     color: $color-text;
+    text-transform: uppercase;
     justify-content: space-around;
   }
   @include footer-alignment() {
