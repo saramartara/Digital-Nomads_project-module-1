@@ -58,12 +58,10 @@
   text-decoration: none;
 }
 .footer-logo__image {
-  @include footer() {
-    width: 116px;
-    height: 45px;
-    align-items: center;
-    justify-content: space-around;
-  }
+  width: 116px;
+  height: 45px;
+  align-items: center;
+  justify-content: space-around;
   &:hover {
     animation-name: pop;
     animation-duration: 1s;

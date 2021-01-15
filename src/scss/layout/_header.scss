@@ -69,6 +69,10 @@
     margin-left: $margin-container-desktop;
     padding-left: 4px;
   }
+  &__contact {
+    color: $color-nav-title;
+    text-decoration: none;
+  }
 }
 .nav {
   width: 100%;
