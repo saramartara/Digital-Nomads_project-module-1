@@ -95,6 +95,10 @@
     &--menu {
       color: $color-nav-title;
       text-decoration: none;
+      &:hover {
+        color: $color-text;
+        text-decoration: underline;
+      }
     }
     &--who {
       @include tablet() {
