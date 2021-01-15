@@ -79,6 +79,20 @@
     align-items: center;
     justify-content: space-around;
   }
+  &:hover {
+    animation-name: pop;
+    animation-duration: 1s;
+    animation-iteration-count: 2;
+    @keyframes pop {
+      from {
+        transform: scale(1);
+      }
+
+      to {
+        transform: scale(2);
+      }
+    }
+  }
 }
 
 @media all and (min-width: 768px) {
