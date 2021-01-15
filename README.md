@@ -11,7 +11,7 @@ Con diseño elegante y tendencia minimalista, _donde menos es más._
 
 Algunos de los aprendizajes adquiridos, plasmados en este proyecto y ¡que podrían formar parte del tuyo!:
 
-Lenguajes de programación HTML, SCSS...
+Lenguajes de marcado HTML, lenguaje de estilos SCSS...
 
 Organización en base a la filosofía de trabajo Agile, con revisiones y demos periódicas, comunicación constante y fluída, trabajo en remoto eficiente y eficaz, uso de tecnologías para control de versiones (Git, GitHub, GitHub Projects, GitHub Pages, Gulp...).
 
@@ -34,7 +34,7 @@ The main objective is ** to learn **, using a very practical and functional vehi
 
 ## Our learning at your disposal:
 
-Programming languages ​​HTML, SCSS ...
+Languages ​​HTML, SCSS ...
 
 Agile philosophy, reviews and demos, constant and fluid communication, remote work, technologies as Git, GitHub, GitHub Projects, GitHub Pages, Gulp ... ).
 
