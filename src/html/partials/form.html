@@ -18,28 +18,29 @@
       />
     </div>
     <div class="containers-emailtelephone">
-    <div class="containers form__email">
-      <label for="emai_form">Email <span class="asterisk">*</span></label>
-      <input
-        class="form__input form__input--email"
-        id="email"
-        type="email"
-        name="email"
-        placeholder="nombre.apellidos@email.com"
-        required
-      />
+      <div class="containers form__email">
+        <label for="emai_form">Email <span class="asterisk">*</span></label>
+        <input
+          class="form__input form__input--email"
+          id="email"
+          type="email"
+          name="email"
+          placeholder="nombre.apellidos@email.com"
+          required
+        />
+      </div>
+      <div class="containers form__telephone">
+        <label for="telephone">Teléfono</label>
+        <input
+          class="form__input"
+          id="telephone"
+          type="tel"
+          name="tel"
+          placeholder="Ej: 123456789"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        />
+      </div>
     </div>
-    <div class="containers form__telephone">
-      <label for="telephone">Teléfono</label>
-      <input
-        class="form__input"
-        id="telephone"
-        type="tel"
-        name="tel"
-        placeholder="Ej: 123456789"
-      />
-    </div>
-  </div>
     <div class="containers form__message">
       <label for="message">Mensaje <span class="asterisk">*</span></label>
       <textarea
@@ -52,7 +53,7 @@
       ></textarea>
     </div>
     <div class="container-button">
-    <input class="button" type="submit" value="Enviar" />
+      <input class="button" type="submit" value="Enviar" />
     </div>
   </form>
 </section>
