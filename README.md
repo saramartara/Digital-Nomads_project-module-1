@@ -1,76 +1,45 @@
 ![Adalab](https://beta.adalab.es/resources/images/adalab-logo-155x61-bg-white.png)
 
-# Proyecto del Módulo 1 del Equipo 2 (Promoción L)
+# ¿Qué es Nómadas Digitales?
 
-Este es el repositorio del Proyecto del Módulo 1 del Equipo 2 de la Promoción L de Adalab.
+Este repositorio es donde desarrollamos un proyecto de una web colaborativa que forma parte del curso de formación de la Asociación Adalab.
 
-En este proyecto hemos desarrollado nuestra primera web colaborativa. Para ello creamos una web con la información social de todas las que formamos el equipo.
+## Objetivo
 
-en **node y gulp**. ¿Y qué es un Starter kit? Pues es una **plantilla de proyecto con funcionalidades preinstaladas y preconfiguradas**.
+El objetivo principal de la realización del proyecto es **aprender**, usando un vehículo de lo más práctico y funcional: una web para darnos a conocer como programadoras por medio de nuestro propio producto, así, _nuestro trabajo habla por nosotras._ y con un diseño elegante y de tendencia minimalista, _donde menos es más._
 
-- La carpeta `src/`:
-- Las carpetas `public/` y `docs/`, que son generadas automáticamente cuando arrancamos el proyecto.
+## Nuestro aprendizaje a tu disposición:
 
-## Guía de inicio rápido
+Algunos de los aprendizajes adquiridos, plasmados en este proyecto y ¡que podrían formar parte del tuyo! son:
 
-> **NOTA:** Necesitas tener instalado [Node JS](https://nodejs.org/) para trabajar con este Starter Kit:
+1. Lenguaje de marcado HTML, de estilos SCSS, automatización de tareas usando Gulp...
 
-### Pasos a seguir cada vez que queremos arrancar un proyecto desde cero:
+2. Organización en base a la filosofía de trabajo **Agile**, con revisiones y demos periódicas, comunicación constante y fluída, trabajo en remoto eficiente y eficaz (GitHub Projects), uso de tecnologías para control de versiones (Git, GitHub,...) y despliegue (GitHub Pages).
 
-1. **Crea tu propio repositorio.**
-1. Descarga este **Starter kit desde GitHub**.
-   - No recomendamos que clones este repo ya que no podrás añadir commits.
+3. El valor de nuestro trabajo es la suma de las personas del equipo. Entra en la web y **¡descúbrelo!**
 
-```bash
-npm install
-```
+## Feedback y contribución:
 
-### Pasos para arrancar el proyecto:
+¿Te interesa el proyecto? Si tienes sugerencias, dudas, ideas o te apetece comentar algo, no lo dudes, estamos encantadas de conectarnos. Puedes hacerlo a través del formulario de contacto de la web o de las issues de este repositorio.
 
-Una vez hemos instalado las dependencias, vamos a arrancar el proyecto. **El proyecto hay que arrancarlo cada vez que te pongas a programar.** Para ello ejecuta el comando:
+--<>--
 
-```bash
-npm start
-```
+# Digital Nomads
 
-## Flujo de archivos con Gulp
+This repository is where we develop a collaborative web project part of the Adalab Association training course.
 
-Estas tareas de Gulp producen el siguiente flujo de archivos:
+## Objective
 
-![Gulp flow](./gulp-flow.png)
+The main objective is **to learn**, using a very practical and functional vehicle: a website to make us known as programmers through our own product
 
-## `gulpfile.js` y `config.json`
+## Our learning at your disposal:
 
-Nuestro **gulpfile.js** usa el fichero `config.json` de configuración con las rutas de los archivos a generar / observar.
+Languages ​​HTML, SCSS ...
 
-De esta manera separarmos las acciones que están en `gulpfile.js` de la configuración de las acciones que están en `config.json`.
+Agile philosophy, reviews and demos, constant and fluid communication, remote work, technologies as Git, GitHub, GitHub Projects, GitHub Pages, Gulp ... ).
 
-## Estructura de carpetas
+The value of our work is our team. Enter the web and **find out!**
 
-La estructura de carpetas tiene esta pinta:
+## Feedback and contribution:
 
-```
-src
- ├─ api // los ficheros de esta carpeta se copian en public/api/
- |  └─ data.json
- ├─ images
- |  └─ logo.jpg
- ├─ js // los ficheros de esta carpeta se concatenan en el fichero main.js y este se guarda en public/main.js
- |  ├─ main.js
- |  └─ events.js
- ├─ scss
- |  ├─ components
- |  ├─ core
- |  ├─ layout
- |  └─ pages
- └─ html
-    └─ partials
-```
-
-> **NOTA:** Los partials de HTML y SASS del proyecto son orientativos. Te recomendamos usar los que quieras, y borrar los que no uses.
-
-## Vídeotutoriales del Starter kit
-
-- [Qué es, trabajar con la versión de desarrollo y rutas relativas](https://www.youtube.com/watch?v=XwvhXvBijos)
-- [Migración de un proyecto, trabajar con la versión de producción y GitHub Pages](https://www.youtube.com/watch?v=qqGClcgt9Uc)
-- [Motor de plantillas](https://www.youtube.com/watch?v=4GwXOJ045Zg)
+Are you interested in the project? Any suggestion, ideas or comments are very welcome. You can do it through the contact form on the web or through the issues in this repository.
