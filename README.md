@@ -16,11 +16,13 @@ Algunos de los aprendizajes adquiridos, plasmados en este proyecto y ¡que podr�
 
 2. Organización en base a la filosofía de trabajo **Agile**, con revisiones y demos periódicas, comunicación constante y fluída, trabajo en remoto eficiente y eficaz (GitHub Projects), uso de tecnologías para control de versiones (Git, GitHub,...) y despliegue (GitHub Pages).
 
-3. El valor de nuestro trabajo es la suma de las personas del equipo. Entra en la web y **¡descúbrelo!**
+3. El valor de nuestro trabajo es la suma de las personas del equipo. Entra en la web y **[¡descúbrelo!]**[beta]
 
 ## Feedback y contribución:
 
-¿Te interesa el proyecto? Si tienes sugerencias, dudas, ideas o te apetece comentar algo, no lo dudes, estamos encantadas de conectarnos. Puedes hacerlo a través del formulario de contacto de la web o de las issues de este repositorio.
+¿Te interesa el proyecto? Si tienes sugerencias, dudas, ideas o te apetece comentar algo, no lo dudes, estamos encantadas de conectarnos. Puedes hacerlo a través del **[formulario de contacto]**[form] de la web, de las issues de este repositorio o directamente con el **[equipo]**[team]
+[Amanda García]
+[Cristina ]
 
 --<>--
 
@@ -38,8 +40,12 @@ Languages ​​HTML, SCSS ...
 
 Agile philosophy, reviews and demos, constant and fluid communication, remote work, technologies as Git, GitHub, GitHub Projects, GitHub Pages, Gulp ... ).
 
-The value of our work is our team. Enter the web and **find out!**
+The value of our work is our team. Enter the web and **[find out!]**[beta]
 
 ## Feedback and contribution:
 
-Are you interested in the project? Any suggestion, ideas or comments are very welcome. You can do it through the contact form on the web or through the issues in this repository.
+Are you interested in the project? Any suggestion, ideas or comments are very welcome. You can do it through the **[contact form]**[form] on the web, through the issues in this repository or with **[the contributors]**[team]
+
+[beta]: https://saramartara.github.io/Digital-Nomads_project-module-1/
+[form]: https://saramartara.github.io/Digital-Nomads_project-module-1/contact.html
+[team]: https://github.com/Adalab/project-promo-l-module-1-team-2/graphs/contributors
